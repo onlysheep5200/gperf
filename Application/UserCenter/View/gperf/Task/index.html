@@ -1,0 +1,237 @@
+<html lang="en">
+<!-- 头 -->
+<block name="head">
+<head>
+    <meta charset="utf-8" />
+    <title>GPerf-A global network performance measurement system
+    </title>
+    <meta name="keywords" content="keyword ..." />
+    <meta name="Description" content="description ..." />
+    <!--<link href="favicon.ico" rel="shortcut icon" />-->
+    <link href="__CSS__/global.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__CSS__/jquery.treeview.css" />
+    <link rel="stylesheet" href="">
+</head>
+</block>
+
+
+<body>
+<block name="navbar">
+    <include file="Public/header" />
+</block>
+<div id="maincontent">
+<include file="Public/search_field" />
+<div id="searchresult">
+
+<block name="sites">
+<div id="site_s">
+    <div class="link"><a href="{:U('Home/Index/index')}" class="a2 a3">+ New Task</a></div>
+    <!--<div class="link"><a href="#" class="a2 a3">+ New Probe</a></div>-->
+    <a href="#">User Center</a><span>&gt;</span><a href="#">User Management</a><span>&gt;</span>Task List</div>
+ </block>
+
+ <block name="tabs">
+<div class="result_tabs">
+  <ul>
+   <li class="current"><a href="#">Task List({$_task_count})</a></li>
+   <li ><a href="{:U('Probe/index')}">Probe List({$_probe_count})</a></li>
+   <li><a href="#">My Profile{$_profile_count}</a></li>
+  </ul>
+ </div>
+ </block>
+
+<block name="main">
+<div class="table">
+ <table cellpadding="0" cellspacing="0">
+  <thead>
+   <tr>
+    <th class="td_1"><a href="#" class="rank rank1"></a>Status</th>
+    <th class="td_2"><a href="#" class="rank"></a>Name</th>
+    <th class="td_3"><a href="#" class="rank"></a>Task Type</th>
+    <th class="td_5"><a href="#" class="rank"></a>Sources</th>
+    <th class="td_6"><a href="#" class="rank"></a>Implementation</th>
+    <th class="td_7"><a href="#" class="rank"></a>Start Time</th>
+    <th class="td_7"><a href="#" class="rank"></a>End Time</th>
+    <th class="td_8">Operating</th>
+   </tr>
+  </thead>
+  <tbody>
+  <tr class="search">
+    <td class="td_1"><select class="select"><option>Select...</option></select></td>
+    <td class="td_2"><input type="text" class="searchtxt" /></td>
+    <td class="td_3"><select class="select"><option>Select...</option></select></td>
+    <td class="td_4"><select class="select"><option>Select...</option></select></td>
+    <td class="td_5"><select class="select"><option>Select...</option></select></td>
+    <td class="td_6">&nbsp;</td>
+    <td class="td_7">&nbsp;</td>
+    <td class="td_8">&nbsp;</td>
+  </tr>
+  <volist name="_tasks" id="vo">
+   <tr class="split">
+    <if condition="$vo['status'] eq 'done'">
+        <td class="td_1"><span class="state state2"></span>{$vo['status']}</td>
+    <elseif condition="$vo['status'] neq 'failed'" />
+        <td class="td_1"><span class="state state1"></span>{$vo['status']}</td>
+    <else />
+        <td class="td_1"><span class="state state3"></span>{$vo['status']}</td>
+    </if>
+    <td class="td_2">{$vo['name']}</td>
+    <td class="td_3">{$vo['type']}</td>
+    <td class="td_4">{$vo['srcnum']}</td>
+    <td class="td_6">Single execution</td>
+    <td class="td_7">{$vo['starttime']}</td>
+    <td class="td_7">{$vo['endtime']}</td>
+    <td class="td_8"><a href="{:U('detail',array('tid'=>$vo['tid']))}">detail</a>&nbsp;&nbsp;&nbsp;<a href="{:U('delete',array('tid'=>$vo['tid']))}" >delete</a></td>
+   </tr>
+   </volist>
+  </tbody>
+  </block>
+
+
+  <tfoot>
+   <tr><td colspan="8">
+   <div class="footpage">
+   <a href="<" class="disabled">&lt;</a>
+   <for start="0" end="$_pages">
+        <if condition="$i+1 eq $_cur_page">
+            <a class="current" href="{:U('index?page='.($i+1))}">{$i+1}</a>
+        <else/>
+            <a href="{:U('index?page='.($i+1))}">{$i+1}</a>
+        </if>
+   </for>
+   <a href=">">&gt;</a>
+   </div>
+   
+   总共{$_count}条结果，共{$_pages}页</td></tr>
+  </tfoot>
+ </table>
+</div>
+<!--<div class="btn"><input type="button" class="nextbtn" value="Next" /></div>-->
+</div>
+<!--
+<div class="template_split"></div>
+<div class="probe_share_tg">
+ <div class="probe">
+    <div class="t"><strong>My Probe</strong></div>
+  <ul class="list">
+    <volist name="_btn_probes" id="vo">
+   <li>
+    <h4><a href="#">The probe named {$vo['name']} is {$vo['running_status']} now </a></h4>
+    <if condition="$vo['running_status'] eq 'ok'">
+    <div class="date">{$vo['updated']}</div>
+    <else />
+    <div class="date date1">{$vo['updated']}</div>
+    </if>
+   </li>
+   </volist>
+   
+  </ul>
+ </div>
+ <div class="share">
+  <div class="t"><strong>Share</strong></div>
+  <ul class="list">
+   <li>
+    <h4><a href="#">GÉANT Open Call boost to Innovation Programme History History History History</a></h4>
+    <div class="date">17 June | 2014</div>
+   </li>
+   <li>
+    <h4><a href="#">GÉANT Open Call boost to Innovation Programme History History History History</a></h4>
+    <div class="date">17 June | 2014</div>
+   </li>
+   <li>
+    <h4><a href="#">GÉANT Open Call boost to Innovation Programme History History History History</a></h4>
+    <div class="date">17 June | 2014</div>
+   </li>
+   <li>
+    <h4><a href="#">GÉANT Open Call boost to Innovation Programme History History History History</a></h4>
+    <div class="date">17 June | 2014</div>
+   </li>
+   <li>
+    <h4><a href="#">GÉANT Open Call boost to Innovation Programme History History History History</a></h4>
+    <div class="date">17 June | 2014</div>
+   </li>
+   <li>
+    <h4><a href="#">GÉANT Open Call boost to Innovation Programme History History History History</a></h4>
+    <div class="date">17 June | 2014</div>
+   </li>
+  </ul>
+ </div>
+ <div class="tg">
+  <div class="img">
+   <dl>
+    <dt>{$_score}</dt>
+    <dd>Total Points</dd>
+   </dl>
+   <div class="bg"></div>
+   <a href="#" class="more">VIEW MORE</a>
+  </div>
+  <ul>
+   <li>
+    <span class="span">+10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+   <li>
+    <span class="span span1">-10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+   <li>
+    <span class="span">+10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+   <li>
+    <span class="span span1">-10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+   <li>
+    <span class="span">+10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+   <li>
+    <span class="span span1">-10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+   <li>
+    <span class="span span1">-10</span>
+    <h4><a href="#">Get points by submitting domain objects</a></h4>
+    <p>17 June | 2014</p>
+   </li>
+  </ul>
+ </div>
+ <div class="clear"></div>
+</div>
+-->
+</div>
+<div id="footer">
+<div class="menu"><a href="#">Academic Report</a><a href="#">GPerf News</a><a href="#">GPerf Cases</a><a href="#">GPerf Members</a></div>
+<div class="copy">Coptyright &copy; 2011-2012 Enzyme. By Empirical Themes - Remove upon purchase</div>
+</div>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script src="__JS__/jquery.treeview.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="__JS__/jquery.cookie.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/tree.js"></script>
+<script type="text/javascript">
+		$(function() {
+
+			$("#tree").treeview({
+		animated: "fast",
+		collapsed: true,
+		unique: true,
+		persist: "cookie",
+		toggle: function() {
+			window.console && console.log("%o was toggled", this);
+		}
+	});
+		})
+</script>
+</block>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>网站标题</title>
+    <meta name="keywords" content="keyword ..." />
+    <meta name="Description" content="description ..." />
+    <!--<link href="favicon.ico" rel="shortcut icon" />-->
+    <link href="__CSS__/live.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--测试时我把地图放背景里面了，套代码时请把这个去掉-->
+<div id="mapcontent">
+<!--地图请放这儿 宽度自适应，高度显示为一屏，我已经设置好了，直接地图放下去就可以了-->
+</div>
+<h1 class="logo"><a href="#">title</a></h1>
+<div class="content1 flow">
+<div class="inner">
+ <h3>User Ranking</h3>
+ <div class="title"><span class="country">Country</span><span class="username">UserName</span><span class="times">Times</span></div>
+ <div class="rankcontent">
+  <div id="ranklist">
+   <ul>
+    <li class="li1"><span class="country"><a href="#"><img src="__IMG__/country_img01.png" alt="" title="" /></a></span><span class="username">nonameman</span><span class="times">129</span></li>
+    <li class="li2"><span class="country"><a href="#"><img src="__IMG__/country_img02.png" alt="" title="" /></a></span><span class="username">nonameman</span><span class="times">129</span></li>
+    <li class="li3"><span class="country"><a href="#"><img src="__IMG__/country_img03.png" alt="" title="" /></a></span><span class="username">nonameman</span><span class="times">129</span></li>
+    <li><span class="country"><a href="#"><img src="__IMG__/country_img04.png" alt="" title="" /></a></span><span class="username">nonameman</span><span class="times">129</span></li>
+    <li><span class="country"><a href="#"><img src="__IMG__/country_img05.png" alt="" title="" /></a></span><span class="username">nonameman</span><span class="times">129</span></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div class="bg"></div>
+</div>
+<div class="content2 flow">
+<div class="bg"></div>
+<div class="inner">
+ <h3>Performance Ranking</h3>
+ <div class="reportform"><img src="__IMG__/reportimg.png" alt="" title="" /></div>
+</div>
+</div>
+<div class="content3 flow">
+<div class="bg"></div>
+<div class="inner">
+<h3>Targets Ranking</h3>
+<div class="title"><span class="country">Target Name</span><span class="username">IP Adress</span><span class="times">Value</span></div>
+ <div class="rankcontent">
+  <div id="Ranking">
+   <ul>
+    <li class="li1"><span class="country"><a href="#">nametxt</a></span><span class="username">26.018.48</span><span class="times">2100</span></li>
+    <li class="li2"><span class="country"><a href="#">nametxt</a></span><span class="username">26.018.48</span><span class="times">2100</span></li>
+    <li class="li3"><span class="country"><a href="#">nametxt</a></span><span class="username">26.018.48</span><span class="times">2100</span></li>
+    <li><span class="country"><a href="#">nametxt</a></span><span class="username">26.018.48</span><span class="times">2100</span></li>
+    <li><span class="country"><a href="#">nametxt</a></span><span class="username">26.018.48</span><span class="times">2100</span></li>
+    <li><span class="country"><a href="#">nametxt</a></span><span class="username">26.018.48</span><span class="times">2100</span></li>
+   </ul>
+  </div>
+ </div>
+</div>
+</div>
+<div class="content4 flow">
+<div class="bg"></div>
+<div class="inner">
+ <h3>Who Are Testing？</h3>
+ <div class="title"><span class="username">UserName</span><span class="country">Country</span><span class="type">Type</span><span class="time">Time</span><span class="probes">Probes</span><span class="targets">Targets</span></div>
+ <div id="testing">
+ <ul>
+  <li><span class="username">maryyi101</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi102</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi103</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi104</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi105</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi106</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi107</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi108</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi109</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+  <li><span class="username">maryyi110</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">Typetxt1</span><span class="time">2014-02-10</span><span class="probes">690</span><span class="targets">Typetxt1</span></li>
+ </ul>
+ </div>
+</div>
+</div>
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/live.js"></script>
+</body>
+</html>

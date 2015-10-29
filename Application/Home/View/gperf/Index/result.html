@@ -1,0 +1,133 @@
+﻿<extend name="Public/base"/>
+<block name="main">
+<include file="Public/search_field" />
+
+ <div class="result_tabs" id="sites">
+  <ul>
+      <!--
+   <li><a href="#">Task configure</a></li>
+   <li><a href="#">Operation</a></li>
+   <li class="current"><a href="#">Execution Results</a></li>-->
+   <volist id="type" name="_types">
+   
+   <li><a href="#">{$type}</a></li>
+   </volist>
+  </ul>
+ </div>
+<div id="result">
+ <ul id="result-list">
+ <foreach  name="_tasks" item="tasks" key="type">
+
+ <volist name="tasks" id="task">
+ <li class="{$type}">
+   <dl>
+       <dt><label class="zoom"></label><input type="checkbox" class="checkbox" checked="checked" name="tid" value="{$task['tid']}" /><span class="span"></span>{$type} task by probe {$task['pname']} </dt>
+    <dd style = 'postion:relative'>
+    <p class="src" style="display:none"><label class="label">Source Probe：</label>
+        {$task['pname']}    
+    </p>
+    <!--
+    <p><label class="label">Destination Address：</label>
+        <volist name="task['dests']" id="dest">
+        <span class="span">{$dest}</span>
+        </volist>
+    </p>
+    -->
+    
+    <p style="display:none" class="status"><label class="label">Status:</label>{$task['status']}</p>
+    <p style="display:none" class="starttime"><label class="label">Start time：</label>{$task['starttime']}</p>
+
+    <p style="display:none" class="endtime"><label class="label">End time：</label>{$task['endtime']}</p>
+
+    <p class="loading"><img src="__PIC__/loading.gif"></p>
+    <p class="loading"><img src="__PIC__/loading_bar.gif"></p>
+    <input type="hidden" name="pid" value="{$task['pid']}" />
+    <input type="hidden" name="tid" value="{$task['tid']}" />
+    <div id="chartarea"></div>
+    </dd>
+   </dl>
+   <div class="none">
+   <dl>
+       <dt><label class="zooms"></label>{:ucfirst($type)} Task by Probe {$task['pname']}</dt>
+    <dd>
+    </dd>
+   </dl>
+   </div>
+  </li>
+  </volist>
+  </foreach>
+  </ul>
+  
+  <div class="btn">
+    <empty name="_uid">
+      <input type="button" class="btn1" value="Export PDF" onclick="slowlogin()" />
+      <input type="button" class="btn2" value="New Task" onclick="newTask()" />
+    <else />
+      <input type="button" class="btn1" value="Export PDF" onclick="exportPDF()" />
+      <input type="button" class="btn2" value="Share Data" onclick="shareData()" />
+    </empty>
+  </div>
+</div>
+  </block>
+
+<block name="popup">
+<empty name="_uid">
+<div id="logincontent">
+ <div class="inner">
+  <div class="title"><span class="close" onclick="hidelogin()"></span></div>
+  <div class="body">
+   <div class="logo"></div>
+   <div class="form">
+   <ul>
+
+    <form action="{:U('User/login')}" method="post">
+     <li><input required="required" name="username" type="text" class="text" placeholder="User name" /></li>
+    <li><input type="password" name="password" required="required" class="text" placeholder="User password" /></li>
+   
+    <li><input type="submit" class="submitbtn" value="Login" /></li>
+</form>
+    <li class="in"><a href="{:U('User/register')}">Sign up for new probe! </a></li>
+   </ul>
+   </form>
+   </div>
+  </div>
+ </div>
+</div>
+</empty>
+<div id="fullcontent"><div class="fullcontent"></div></div>
+<div id="zoomflow" class="raw">
+ <div class="inner">
+ <dl>
+    <dt><input type="checkbox" class="checkbox" checked="checked" /><span class="span"></span>Probe  1</dt>
+    <dd>
+    <p><label class="label">Source Probe：</label><span class="span">10.3.17.58</span>(probe 2014-07-01 12:31:24)</p>
+    <p><label class="label">Destination Address：</label>8.8.8.8</p>
+    <p><label class="label">Average Delay：</label>192.21ms</p>
+    <p><label class="label">Loss：</label>60%</p>
+    </dd>
+   </dl>
+ </div>
+</div>
+</block>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    var index_addr = "{:U('Index/index')}";
+    var configure_addr = "{:U('Index/configure')}";
+    var before_complete = "{:U('Index/beforeComplete')}";
+    var run_addr = "{:U('Index/run')}";
+    var share_addr = "{:U('Index/shareData')}";
+    var echart_dir  = "__STATIC__/echarts/js/";
+    var report_dir = "{:U('Index/getProbeTaskReport')}";
+    var check_addr = "{:U('Index/checkTasks')}"; 
+    var result_addr = "{:U('Index/result')}"
+    var check_status_addr = "{:U('Index/checkStatus')}";
+</script>
+<script src="__STATIC__/echarts/js/esl.js"></script>
+<script src="__PUBLIC__/Home/js/report.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/result.js"></script>
+<script src = "__JS__/run.js"></script>
+</block>

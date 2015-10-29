@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Gperf Live</title>
+    <meta name="keywords" content="keyword ..." />
+    <meta name="Description" content="description ..." />
+    <!--<link href="favicon.ico" rel="shortcut icon" />-->
+    <link href="__CSS__/live.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--测试时我把地图放背景里面了，套代码时请把这个去掉-->
+<div id="mapcontent">
+<!--地图请放这儿 宽度自适应，高度显示为一屏，我已经设置好了，直接地图放下去就可以了-->
+</div>
+<h1 class="logo"><a href="#">title</a></h1>
+<div class="content1 flow">
+<div class="inner">
+ <h3>User Ranking</h3>
+ <div class="title"><span class="country">Country</span><span class="username">Country Name</span><span class="times">Number</span></div>
+ <div class="rankcontent">
+  <div id="ranklist">
+   <ul>
+    <li class="li1"><span class="country"><a href="#"><img src="__IMG__/country_img01.png" alt="" title="" /></a></span><span class="username">United States of America</span><span class="times">418</span></li>
+    <li class="li2"><span class="country"><a href="#"><img src="__IMG__/country_img02.png" alt="" title="" /></a></span><span class="username">Germany</span><span class="times">48</span></li>
+    <li class="li3"><span class="country"><a href="#"><img src="__IMG__/country_img03.png" alt="" title="" /></a></span><span class="username">UK</span><span class="times">36</span></li>
+    <li><span class="country"><a href="#"><img src="__IMG__/country_img04.png" alt="" title="" /></a></span><span class="username">Russia</span><span class="times">30</span></li>
+    <li><span class="country"><a href="#"><img src="__IMG__/country_img05.png" alt="" title="" /></a></span><span class="username">France</span><span class="times">26</span></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div class="bg"></div>
+</div>
+<div class="content2 flow">
+<div class="bg"></div>
+<div class="inner">
+ <h3>IPV6 Bandwidth Ranking</h3>
+ <div class="reportform"><!-- <img src="__IMG__/reportimg.png" alt="" title="" /> --></div>
+</div>
+</div>
+<div class="content3 flow">
+<div class="bg"></div>
+<div class="inner">
+<h3>Targets Ranking</h3>
+<div class="title"><span class="country">Target Name</span><span class="username">IP Adress</span><span class="times">Value</span></div>
+ <div class="rankcontent">
+  <div id="Ranking">
+   <ul>
+    <li class="li1"><span class="country"><a href="#">test1</a></span><span class="username">59.64.255.56</span><span class="times">342</span></li>
+    <li class="li2"><span class="country"><a href="#">test2</a></span><span class="username">59.64.255.74</span><span class="times">300</span></li>
+    <li class="li3"><span class="country"><a href="#">onlysheep</a></span><span class="username">59.64.255.249</span><span class="times">230</span></li>
+    <li><span class="country"><a href="#">test5</a></span><span class="username">59.64.255.122</span><span class="times">241</span></li>
+    <li><span class="country"><a href="#">bupt</a></span><span class="username">59.64.255.56.77</span><span class="times">151</span></li>
+   </ul>
+  </div>
+ </div>
+</div>
+</div>
+<div class="content4 flow">
+<div class="bg"></div>
+<div class="inner">
+ <h3>Who Are Testing？</h3>
+ <div class="title"><span class="username">UserName</span><span class="country">Country</span><span class="type">Type</span><span class="time">Time</span><span class="probes">Probes</span><span class="targets">Targets</span></div>
+ <div id="testing">
+ <ul>
+  <li><span class="username">onlysheep</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">ping</span><span class="time">2014-08-25</span><span class="probes">test2</span><span class="targets">www.baidu.com</span></li>
+  <li><span class="username">onlysheep</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">traceroute</span><span class="time">2014-08-25</span><span class="probes">test3</span><span class="targets">www.youku.com</span></li>
+  <li><span class="username">onlysheep</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">dns</span><span class="time">2014-08-25</span><span class="probes">test2</span><span class="targets">www.baidu.com</span></li>
+  <li><span class="username">onlysheep1234</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">bandwidth</span><span class="time">2014-08-30</span><span class="probes">test3</span><span class="targets">test3</span></li>
+  <li><span class="username">test3</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">ping</span><span class="time">2014-09-01</span><span class="probes">onlysheep</span><span class="targets">www.google.com</span></li>
+  <li><span class="username">test3</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">dns</span><span class="time">2014-09-01</span><span class="probes">test4</span><span class="targets">www.google.com</span></li>
+  <li><span class="username">test3</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">ping</span><span class="time">2014-09-01</span><span class="probes">onlysheep</span><span class="targets">www.tabao.com</span></li>
+  <li><span class="username">onlysheep</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">ping</span><span class="time">2014-09-10</span><span class="probes">test4</span><span class="targets">www.google.com</span></li>
+  <li><span class="username">onlysheep</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">ping</span><span class="time">2014-09-10</span><span class="probes">test4</span><span class="targets">www.baidu.com</span></li>
+  <li><span class="username">onlysheep</span><span class="country"><img src="__IMG__/country_img01.png" alt="" title="" /></span><span class="type">ping</span><span class="time">2014-09-10</span><span class="probes">test4</span><span class="targets">www.youku.com</span></li>
+ </ul>
+ </div>
+</div>
+</div>
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script src="__STATIC__/echarts/js/esl.js"></script>
+<script>
+    var echart_dir = '__STATIC__/echarts/js/';
+    var location_dir = "{:U('Live/getLocationInfo')}";
+</script>
+<script language="javascript" type="text/javascript" src="__JS__/live.js"></script>
+</body>
+</html>

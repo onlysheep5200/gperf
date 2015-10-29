@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gperf/!svn/ver/89/2/Application/Admin/View/Public
+END
+exception.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gperf/!svn/ver/89/2/Application/Admin/View/Public/exception.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Application/Admin/View/Public/login.html
+END
+success.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gperf/!svn/ver/89/2/Application/Admin/View/Public/success.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Application/Admin/View/Public/error.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/gperf/!svn/ver/89/2/Application/Admin/View/Public/base.html
+END

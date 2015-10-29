@@ -1,0 +1,67 @@
+<extend name="Public/base" />
+
+<block name="main">
+<div id="maincontent">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="template_search">
+ <div class="key">
+ <h3>Welcome to <strong>GPerf</strong> - A Global Performance Measurement Network!</h3>
+ <p>We have 65 probes and 78 task running.</p>
+</div>
+ <div class="search"><div class="i"><input type="text" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname" /><input type="button" class="searchbtn" /></div></div>
+ <div class="split"></div>
+ </div>
+<div id="newscontent">
+ <div class="lc">
+  <!-- <dl>
+   <dt>{$channelname}</dt>
+   <dd>
+    <ul>
+      <volist name = "category_list" id = "vo2">
+     <li>&bull;&nbsp;<a href='{:U("Article/newslist?hid=".$channel_id."&cid=".$vo2['id'],"","")}'>{$vo2.name}</a><span></span></li>
+
+   </volist>
+    </ul>
+   </dd>
+  </dl> -->
+  <form action ="{:U('Article/keywords_searchlist')}" method="post">
+  <div class="search">
+   <p>The station search</p>
+   <div class="u"><input type="text" name="keywords" class="searchtxt" /><input type="submit" class="searchbtn" value="" /></div>
+   <p>By pressing the "Search" button you explicity express your agreement with the conditions.</p>
+  </div>
+</form>
+  <div class="banner"><a href="#"><img src="__IMG__/mapimg.jpg" alt="" title="" /></a></div>
+ </div>
+ <div class="rc">
+  <!-- <div id="sites"><a href="#">{$channelname}</a><span>&gt;</span><a href="#">{$category_name}</a><span>&gt;</span></div> -->
+  <div class="list">
+   <ul>
+   <!--  <volist name = "documents" id = "vo3">
+    <li>
+     <dl>
+      <dt><span>{$vo3.create_time|date="Y-m-d h:i",###}</span><a href='{:U("Article/newsdetail?did=".$vo3['id'],"","")}'> {$vo3.title}</a></dt>
+      <dd>{$vo3.description}</dd>
+     </dl>
+    </li>
+    </volist> -->
+
+    <volist name = "lists" id = "vo3">
+      <li>
+        <dl>
+          <dt><span>{$vo3.create_time|date="Y-m-d h:i",###}</span><a href='{:U("Article/newsdetail?cid=".$vo3['cid']."&hid=".$vo3['hid'],"","")}'> {$vo3.title}</a></dt>
+          <dd>{$vo3.description}</dd>
+     </dl>
+    </li>
+  </volist>
+
+
+   </ul>
+   <!--<div class="page"><a href="#">Previous page</a><a href="#" class="current">1</a><a href="#">2</a><a href="#">3</a><a href="#">Next page</a></div>-->
+  </div>
+ </div>
+ <div class="clear"></div>
+</div>
+</div>
+</block>

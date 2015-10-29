@@ -1,0 +1,407 @@
+------------------------
+-- IPProbe crontab program
+-- Incharge of routin report, init etc.
+------------------------
+
+JSON = (loadfile "/usr/ipp_util/JSON.lua")()
+require "socket.http"
+
+-- Print contents of `tbl`, with indentation.
+-- `indent` sets the initial level of indentation.
+function tprint (tbl, indent)
+	if not tbl then return end
+	if not indent then indent = 0 end
+	for k, v in pairs(tbl) do
+		formatting = string.rep("  ", indent) .. k .. ": "
+		if type(v) == "table" then
+			print(formatting)
+			tprint(v, indent+1)
+		else
+			print(formatting .. tostring(v) .. " " .. type(v))
+		end
+	end
+end
+
+------------------------
+-- IPProbe setup function
+------------------------
+function check_setup()
+	setup_json_file = io.open("/opt/setup", "r")
+	setup_json_file_done = io.open("/opt/setup.done", "r")
+	if not setup_json_file then
+		if not setup_json_file_done then
+			print("File not exist, should be /opt/setup")
+			return
+		else
+			print("Setup already done")
+			setup_json_file_done:close()
+			return
+		end
+	end
+	raw_json_text = setup_json_file:read("*all")
+	setup_json_file:close()
+
+
+	print(raw_json_text.."\n")
+
+	-- Parse JSON
+	------------------------
+	lua_value = JSON:decode(raw_json_text)
+	tprint(lua_value)
+	print("\n")
+
+	-- Insert ProbeID(final works, relentless for formal IDs)
+	exe_ret = os.execute("echo 'ProbeID\t\t"..lua_value.pid.."\r' >> /opt/ipprobe.txt")
+
+	for i, v in ipairs(lua_value.serverlist) do
+		if type(v) == "table" then
+			print(v.host, v.port, v.user)
+			exe_ret = os.execute("echo '"..v.host.." ".. v.port .." ".. v.user .."' >> /opt/server.txt")
+		else
+			exe_ret = os.execute("echo '"..v.." 13911 probe' >> /opt/server.txt")
+		end
+	end
+
+
+	-- Key Saving
+	exe_ret = os.execute('echo "'..lua_value.key..'" > /usr/ipp_util/probe_key')
+	exe_ret = os.execute('chmod 600 /usr/ipp_util/probe_key')
+
+	-- IP settings
+	-- TODO
+
+	-- Mark Done
+	exe_ret = os.execute('mv -f /opt/setup /opt/setup.done')
+end
+
+
+------------------------
+-- PING estimate server list
+------------------------
+function ping_est(srvtbl)
+	local exe_ret = os.execute("ping -c 3 -w 3 -q "..srvtbl["host"].." > /tmp/ping.tmp")
+	local ping_tmp_file = io.open("/tmp/ping.tmp", "r")
+	local ping_result = ping_tmp_file:read("*all")
+	ping_tmp_file:close()
+	
+	srvip = ping_result:match("^PING.*%((.-)%)")
+	pingloss = ping_result:match("(%d+)%% packet loss")
+	pingmin, pingavg, pingmax = ping_result:match("min/avg/max = ([%d%.]+)/([%d%.]+)/([%d%.]+)")
+	srvtbl["pingloss"] = pingloss
+	if pingloss ~= 100 then
+		srvtbl["pingmin"] = tonumber(pingmin)
+		srvtbl["pingavg"] = tonumber(pingavg)
+		srvtbl["pingmax"] = tonumber(pingmax)
+	end
+end
+
+------------------------
+-- Get IP type ([0]Error [1]IPv4 [2]IPv6 [3]string)
+------------------------
+function GetIPType(ip)
+  local R = {ERROR = 0, IPV4 = 1, IPV6 = 2, STRING = 3}
+  if type(ip) ~= "string" then return R.ERROR end
+
+  -- check for format 1.11.111.111 for ipv4
+  local chunks = {ip:match("(%d+)%.(%d+)%.(%d+)%.(%d+)")}
+  if #chunks == 4 then
+    for _,v in pairs(chunks) do
+      if tonumber(v) > 255 then return R.STRING end
+    end
+    return R.IPV4
+  end
+
+  -- check for ipv6 format, should be 8 'chunks' of numbers/letters
+  -- without trailing chars
+  local chunks = {ip:match(("([a-fA-F0-9]*):"):rep(8):gsub(":$","$"))}
+  if #chunks == 8 then
+    for _,v in pairs(chunks) do
+      if #v > 0 and tonumber(v, 16) > 65535 then return R.STRING end
+    end
+    return R.IPV6
+  end
+
+  return R.STRING
+end
+
+------------------------
+-- Init
+------------------------
+
+-- Check if needs setup
+
+check_setup()
+
+
+-- Get Info
+local ipp_info_file = io.open("/opt/ipprobe.txt", "r")
+local ipp_info_list = {}
+
+for line in ipp_info_file:lines() do
+	for key, value in line:gmatch("([%w_]+)%s+([%w_]+)") do
+		ipp_info_list[key] = value
+	end
+end
+
+ipp_info_file:close()
+
+
+-- Get server list, delay info get from file
+-- no info for the first time, will be updated afterward
+
+local ipp_srv_file = io.open("/opt/server.txt", "r")
+local ipp_srv_list = {}
+
+for line in ipp_srv_file:lines() do
+	detail = {}
+	for host, port, user in line:gmatch("([%w%._:]+)[%s%]]+(%d+)%s+([%w_]+)") do
+		detail["host"] = host
+		detail["port"] = tonumber(port)
+		detail["user"] = user
+		-- estimate every server with ping
+		-- ping_est(detail)
+		table.insert(ipp_srv_list, detail)
+	end
+end
+
+ipp_srv_file:close()
+
+
+local ipp_status_info = {}
+
+local ps_telnetd_info = {}
+local ps_sshd_info = {}
+local ps_ssh_info = {}
+local ip_info = {}
+local local_time = os.date()
+
+ipp_status_info["Telnetd_Status"] = ps_telnetd_info
+ipp_status_info["SSHd_Status"] = ps_sshd_info
+ipp_status_info["SSH_Status"] = ps_ssh_info
+ipp_status_info["IP_Status"] = ip_info
+ipp_status_info["Local_Time"] = local_time
+
+-- Get PS Info
+local ps_tmp_file = io.popen("/bin/ash -c ps")
+
+for line in ps_tmp_file:lines() do
+	-- print(line)
+	local pinfo = {}
+	if line:find("telnetd") then 
+		for val1, val2 in line:gmatch("(%d+).-(/.*)$") do
+			pinfo["pid"] = tonumber(val1)
+			pinfo["cmd"] = val2
+		end
+		table.insert(ps_telnetd_info, pinfo)
+	end
+	if line:find("dropbear") then 
+		for val1, val2 in line:gmatch("(%d+).-(/.*)$") do
+			pinfo["pid"] = tonumber(val1)
+			pinfo["cmd"] = val2
+		end
+		table.insert(ps_sshd_info, pinfo)
+	end
+	if line:find("ssh") then 
+		for val1, val2 in line:gmatch("(%d+).-(ssh.*)$") do
+			pinfo["pid"] = tonumber(val1)
+			pinfo["cmd"] = val2
+		end
+		table.insert(ps_ssh_info, pinfo)
+	end
+
+end
+
+ps_tmp_file:close()
+
+-- Get IP Info
+exe_ret = os.execute("ip addr show eth0 > /tmp/ip.tmp")
+ip_tmp_file = io.open("/tmp/ip.tmp", "r")
+
+for line in ip_tmp_file:lines() do
+	local ipinfo = {}
+	if line:find("^%s+link") then
+		for val1 in line:gmatch("%s+link/ether%s+([%x:]+)") do
+-- Global Info
+			ipp_info_list["MAC"] = val1
+		end
+	end
+	if line:find("^%s+inet%s+") then
+		for val1, val2 in line:gmatch("%s+inet%s+([%d%./]+).*scope%s+(%w+)") do
+			ipinfo["ver"] = 4
+			ipinfo["addr"] = val1
+			ipinfo["scope"] = val2
+		end
+		table.insert(ip_info, ipinfo)
+	end
+	if line:find("^%s+inet6%s+") then
+		for val1, val2 in line:gmatch("%s+inet6%s+([%x%.:/]+).*scope%s+(%w+)") do
+			ipinfo["ver"] = 6
+			ipinfo["addr"] = val1
+			ipinfo["scope"] = val2
+		end
+		table.insert(ip_info, ipinfo)
+	end
+end
+
+ip_tmp_file:close()
+
+
+------------------------
+-- JSON Package
+------------------------
+
+local lua_value = {}
+lua_value["INFO"] = ipp_info_list
+lua_value["SRV_LIST"] = ipp_srv_list
+lua_value["STATUS"] = ipp_status_info
+
+--tprint(lua_value, 0)
+
+-- JSON Style choice
+local pretty_json_text = JSON:encode_pretty(lua_value)
+--local pretty_json_text = JSON:encode(lua_value)
+
+print(pretty_json_text)
+
+
+------------------------
+-- HTTP Communication
+------------------------
+-- form server list --
+local aim_server_list = {}
+-- If ssh connected, first use server ip
+if (#ps_ssh_info >= 1) then
+	-- get first server address add to aim_server_list
+	for val in ps_ssh_info[1].cmd:gmatch("@(%S+)%s") do
+		table.insert(aim_server_list, val)
+	end
+end
+
+-- then append every server in ipp_srv_list
+for i,v in ipairs(ipp_srv_list) do
+	local iptype = GetIPType(v.host)
+	if (iptype == 2) then --IPv6
+		table.insert(aim_server_list, "[".. v.host .."]")
+	else
+		table.insert(aim_server_list, v.host)
+	end
+end
+
+print("\nReady to test server list:")
+for i,v in ipairs(aim_server_list) do
+	print(v)
+end
+
+-- Test Server List Until success
+local request_body = pretty_json_text
+
+local response_body = { }
+local response_json_raw
+local response_server
+local response_port = 22
+local response_tunnel_port
+local response_user = probe
+local response_cmd_table = {}
+
+-- Test through the server list
+-- Important Big Circle
+for i, server_addr in ipairs(aim_server_list) do
+	print("\n\nTesting "..i.."th server: " .. server_addr .."\n--------------------\n")
+
+	-- set timeout
+	socket.http.TIMEOUT = 10
+
+	local res, code, response_headers = socket.http.request
+	{
+		url = "http://" .. server_addr .. "/ipprobe";
+		method = "POST";
+		headers =
+		{
+			["Content-Type"] = "application/json; charset=UTF-8";
+			["Content-Length"] = #request_body;
+			["IPProbe-ID"] = ipp_info_list["ProbeID"];
+		};
+		source = ltn12.source.string(request_body);
+		sink = ltn12.sink.table(response_body);
+	}
+
+	print("Status:", res and "OK" or "FAILED")
+	print("HTTP code:", code)
+	print("Response headers:")
+	if type(response_headers) == "table" then
+		for k, v in pairs(response_headers) do
+			print(k, ":", v)
+		end
+	else
+		-- Would be nil, if there is an error
+		print("Not a table:", type(response_headers))
+	end
+
+	print("Response body:")
+	if type(response_body) == "table" then
+		-- copy json data
+		response_json_raw = table.concat(response_body)
+		-- print(table.concat(response_body))
+	else
+		-- Would be nil, if there is an error
+		print("Not a table:", type(response_body))
+	end
+
+	print(response_json_raw)
+	print("Done dumping response")
+
+	response_body = nil
+
+	------------------------
+	-- Deal with Response
+	------------------------
+
+	if (code == 200) then
+		response_cmd_table = JSON:decode(response_json_raw)
+		response_server = server_addr
+
+		tprint(response_cmd_table, 0)
+		break
+	else
+		print("HTTP Error")
+		
+	end
+end
+
+-- Get Overall Command
+if response_cmd_table then
+for i, v in ipairs(response_cmd_table) do
+	if (v.Cmd == "ok") then
+		print("Server Read Me")
+	elseif (v.Cmd == "ssh_init") then
+		response_tunnel_port = v.Args.tport
+		if not response_tunnel_port then print("Args Error: No Tunnel Port") break end
+		-- If ssh tunnel already exist, kill
+		if (#ps_ssh_info >= 1) then
+			for i, v in ipairs(ps_ssh_info) do
+				print("SSH Tunnel Established, kill ssh pid:"..v.pid)
+				exe_ret = os.execute("kill "..v.pid)
+			end
+		end
+		-- Init SSH Tunnel
+		-- find server in list for param
+		for i, v in ipairs(ipp_srv_list) do
+			if (v.host == response_server) then
+				response_port = v.port
+				response_user = v.user
+				break
+			end
+		end
+		print("server\tport\ttport\tuser\n"..response_server,response_port,response_tunnel_port,response_user)
+		--exe_ret = os.execute("ssh -o StrictHostKeyChecking=no -o TCPKeepAlive=no -o ServerAliveInterval=300 -o IdentitiesOnly=yes -i ".."/usr/ipp_util/probe_key "..response_user.."@"..response_server.." -p "..response_port.." -fgNR "..response_tunnel_port..":localhost:23")
+		exe_ret = os.execute("ssh -fgNR "..response_tunnel_port..":localhost:23 "..response_user.."@"..response_server.." -p "..response_port.." -i /usr/ipp_util/probe_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o TCPKeepAlive=no -o ServerAliveInterval=300 -o IdentitiesOnly=yes")
+	elseif (v.Cmd == "reboot") then
+		exe_ret = os.execute("reboot")
+	else
+		print("Unknown cmd: "..v.Cmd)
+	end
+end
+end
+
+-- Local Save response_json_raw
+

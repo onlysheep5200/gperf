@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions
+END
+callback_xss.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/callback_xss.php
+END
+inject.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/inject.php
+END
+xssclean.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/xssclean.php
+END
+server_args.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/server_args.php
+END
+safemode.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/safemode.php
+END
+filemode.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/filemode.php
+END
+hotfixs.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/hotfixs.php
+END
+upload.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/upload.php
+END
+webserver.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/webserver.php
+END
+filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/filter.php
+END
+webshell.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/webshell.php
+END
+denier.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/extensions/denier.php
+END

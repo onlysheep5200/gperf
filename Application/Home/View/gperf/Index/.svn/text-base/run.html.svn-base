@@ -1,0 +1,29 @@
+﻿<extend name="Public/base" />
+<block name="main">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="template_search">
+
+ <div class="key">
+ <h3>Welcome to <strong>GPerf</strong> - A Global Performance Measurement Network!</h3>
+ <p>We have 65 probes and 78 task running.</p>
+</div>
+ <div class="search"><div class="i"><input type="text" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname" /><input type="button" class="searchbtn" /></div></div>
+ <div class="split"></div>
+ </div>
+<div id="run">
+ <div class="list">
+    <p>your task is dispatching...</p>
+ </div>
+</div>
+<div class="run_btn"><input type="button" class="cancelbtn" value="Cancel" /></div>
+</block>
+<block name="script">
+   <script src="__STATIC__/jquery-1.10.2.min.js"></script>
+   <script>
+        var result_addr = "{:U('Index/result')}";
+        var check_addr = "{:U('Index/checkTasks')}";
+   </script>
+   <script src="__JS__/run.js"></script>
+
+</block>

@@ -1,0 +1,12 @@
+﻿p,li,ul,dt,dl,dd,a,blockquote,body,h1,h2,h3,h4,h5,h6{padding:0px; margin:0px; text-decoration:none; font-size:12px;list-style-type:none;font-family:'宋体'; color:#484848;}
+a,span,label,b{ font-size:12px;}
+a{ text-decoration:none;}
+ul,li{text-decoration:none; list-style-type:none;}
+img{ border:0px; vertical-align:bottom;}
+input,select,textarea{ outline:none;}
+.clear{ clear:both;}
+.none{ display:none;}
+a:hover{ color:#D98E11; text-decoration:underline;}
+.png{_behavior:url(pic/iepngfix.htc);_behavior:url(css/csshover3.htc); }
+.img_png{opacity:0.60;filter:Alpha(Opacity=60);background:url(../pic/friend_flow_bg2.png) no-repeat!important;background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/friend_flow_bg2.png',sizingMethod='image');position:fixed;right:18px; top:100px; width:28px; overflow:hidden; _position:absolute;_top:expression(((e=document.documentElement.scrollTop)?e:document.body.scrollTop) + 100 +'px'); _right:expression(((e=document.documentElement.scrollRight)?e:document.body.scrollRight) + 18 +'px');}
+#templatefooter{position:fixed; z-index:99999; left:0px; right:0px; bottom:0px; width:100%; _position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-32)); _left:expression(((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)  +'px');}

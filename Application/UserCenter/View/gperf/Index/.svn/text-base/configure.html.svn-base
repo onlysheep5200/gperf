@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>GPerf-A global network performance measurement system</title>
+    <meta name="keywords" content="keyword ..." />
+    <meta name="Description" content="description ..." />
+
+    <link rel="shortcut icon" href="__STATIC__/favicon.ico" />
+    <!--<link href="favicon.ico" rel="shortcut icon" />-->
+    <block name="style">
+    <link href="__CSS__/global.css" rel="stylesheet" type="text/css" />
+    </block>
+</head>
+<body>
+<block name="navbar">
+    <include file="Public/header" />
+</block>
+
+
+<div id="maincontent">
+<include file="Public/search_field" />
+ <!-- main block -->
+ <block name="main">
+ <div id="sites"><a href="#">User Center</a><span>&gt;</span><a href="#">New Task</a><span>&gt;</span>Task configure</div>
+
+ <div class="result_tabs" id="sites">
+     <div class="link"><a href="{:U('Task/index')}" class="a1">Task List</a><a href="{:U('index')}" class="a2">+ New Task</a></div>
+  <ul>
+   <li class="current"><a href="#">Task configure</a></li>
+   <li><a href="#">Operation</a></li>
+   <li><a href="#">Execution Results</a></li>
+  </ul>
+ </div>
+
+<div id="parameters">
+        <div class="form">
+            <ul>
+                <li class="li"><label class="label">Task Types</label>
+                <select class="select" id="service-selector"><!-- <option>Add...</option><option value="Ping">Ping</option><option value="Traceroute">Traceroute</option><option value="DNS">DNS</option> -->
+                <option>Add...</option>
+                <volist name="_types" id="vo">
+                <option value="{$vo['type']}" >{$vo['name']}</option>
+                </volist>
+            </select>
+            <div id="label-container" style="display:inline"><label class="key type" data-value="ping">{$_default}<span class="close">×</span></label></div>
+        </li>
+        <li id="probelist" style="display:none">
+            <volist name="_selected_probes" id="vo">
+            <label><input type="checkbox" value="{$vo['pid']}" name="pid[]" />{$vo['name']}</label>
+            </volist>
+        </li>
+        <input type="hidden" name="token" value="{$_token}" />
+        
+        <div class="args">
+            {$_args}
+        </div>
+        <li class="btnli"><input type="submit" class="submitbtn" id="submitbtn"  value="Submit" /><input type="button" class="cancelbtn" value="Cancel" /></li>
+    </ul>
+    </div>
+</div>
+
+<div id="fullcontent"><div class="fullcontent"></div></div>
+<div id="add_dest">
+ <div class="inner">
+  <div class="title"><span class="close" onclick="hideAddDialog()"></span></div>
+  <div class="body">
+   <div class="logo"></div>
+   <div class="form">
+   <ul>
+     <li><input name="new_dest" type="text" class="text" placeholder="please enter the dest you want to added" /></li>
+   
+    <li><input type="button" onclick="addDest.call(this)"  class="submitbtn" value="Add Dest" /></li>
+
+   </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</block>
+<include file="Public/bottom"/>
+
+<div id="footer">
+<div class="menu"><a href="#">Academic Report</a><a href="#">GPerf News</a><a href="#">GPerf Cases</a><a href="#">GPerf Members</a></div>
+<div class="copy">Coptyright &copy; 2011-2012 Enzyme. By Empirical Themes - Remove upon purchase</div>
+</div>
+<block name="popup">
+
+</block>
+<block name="script">
+<script language="javascrCSS" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var index_addr = "{:U(index)}";
+    var configure_addr = "{:U('configure')}";
+    var run_addr = "{:U('run')}";
+</script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+</block>
+</body>
+</html>

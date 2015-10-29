@@ -1,0 +1,168 @@
+﻿$(document).ready(
+function()
+{
+  var h = $(window).height();
+  $("#mapcontent").css("height",h);
+  $(window).resize(function() { 
+  h = $(window).height();
+  $("#mapcontent").css("height",h);
+  });
+  if($("#testing li").length > 5)
+  {
+  scrollnum = $("#testing li").length;
+  $("#testing ul").append($("#testing ul").html());
+  bannertimeset = setInterval("scrollimg()",3000);
+  $("#testing").hover(
+  function(){clearTimeout(bannertimeset);},
+  function(){bannertimeset = setInterval("scrollimg()",3000);}
+  );
+  require.config({
+      paths: {
+		echarts : echart_dir + 'echarts',
+       	'echarts/chart/map': echart_dir + 'echarts-map'
+      }
+  });
+require(
+	['echarts','echarts/chart/map'],
+	function(ec){
+		var chart = ec.init(document.getElementById('mapcontent'));
+		var option = {
+			backgroundColor : 'black',
+			legend: {
+			        orient: 'horizontal',
+			        x:'center',
+			        data:['Ping', 'Traceroute', 'DNS','Bandwidth'],
+			        selectedMode: 'single',
+			        selected:{
+			            'Traceroute' : false,
+			            'DNS' : false,
+						'Bandwidth' : false
+			        },
+			        textStyle : {
+			            color: '#fff'
+			        }
+			    },
+			series : [
+			{
+				name : 'All Probe',
+				type : 'map',
+				mapType : 'world',
+				roam : false,
+				itemStyle:{
+				   normal:{
+				       borderColor:'white',
+				       borderWidth:0.5,
+				       areaStyle:{
+				         	color: '#1b1b1b'
+				       }
+				   }
+				},
+			    geoCoord: {
+			                   "海门":[121.15,31.89],
+			                   "鄂尔多斯":[109.781327,39.608266],
+			                   "招远":[120.38,37.35],
+			                   "舟山":[122.207216,29.985295],
+			                   "齐齐哈尔":[123.97,47.33],
+			                   "盐城":[120.13,33.38],
+			                   "赤峰":[118.87,42.28],
+						   },
+				data : []
+			},
+			{
+				name : 'Ping',
+				type : 'map',
+				mapType : 'world',
+				roam : false,
+				itemStyle:{
+				   normal:{
+				       borderColor:'white',
+				       borderWidth:0.5,
+				       areaStyle:{
+				         	color: '#1b1b1b'
+				       }
+				   }
+				},
+				markPoint : {
+				   smooth:true,
+				   effect : {
+				     	show: true,
+				        scaleSize: 1,
+				     	period: 30,
+				        color: '#fff',
+				        shadowBlur: 10
+				    },
+				   	itemStyle : {
+				        normal: {
+				          borderWidth:1,
+				          lineStyle: {
+				             type: 'solid',
+				             shadowBlur: 10
+				           }
+				        }
+				},
+				data : [{name : '海门',value : 1},
+				{name : '舟山',value : 2},{name : '赤峰',value : 3}],
+			},{
+				name : 'TraceRoute',
+				type : 'map',
+				mapType : 'world',
+				roam : false,
+				itemStyle:{
+				   normal:{
+				       borderColor:'white',
+				       borderWidth:0.5,
+				       areaStyle:{
+				         	color: '#1b1b1b'
+				       }
+				   }
+				},
+				data : []
+			},{
+				name : 'DNS',
+				type : 'map',
+				mapType : 'world',
+				roam : false,
+				itemStyle:{
+				   normal:{
+				       borderColor:'white',
+				       borderWidth:0.5,
+				       areaStyle:{
+				         	color: '#1b1b1b'
+				       }
+				   }
+				},
+				data : []
+			},{
+				name : 'Bandwidth',
+				type : 'map',
+				mapType : 'world',
+				roam : false,
+				itemStyle:{
+				   normal:{
+				       borderColor:'white',
+				       borderWidth:0.5,
+				       areaStyle:{
+				         	color: '#1b1b1b'
+				       }
+				   }
+				},
+				data : []
+			}]
+		}
+		chart.setOption(option)
+	});
+  
+  }
+});
+var scrollnum = 0;
+var bannertimeset;
+function scrollimg()
+{
+   if($("#testing ul").css("top").replace("px","") < (-30 * ($("#testing li").length - 6)))
+    {
+      //$("#testing ul").animate({top:-30 * scrollnum + 150 + 'px'});
+      $("#testing ul").css("top",-30 * scrollnum + 150 + 'px');
+    }
+
+     $("#testing ul").animate({top:'-=30px'});
+}

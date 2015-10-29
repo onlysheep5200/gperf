@@ -1,0 +1,107 @@
+<extend name="Index/configure" />
+<block name="main">
+<div id="sites"><a href="#">User Center</a><span>&gt;</span><a href="#">Task</a><span>&gt;</span>Excution Result</div>
+
+ <div class="result_tabs" id="sites">
+     <div class="link"><a href="{:U('Task/index')}" class="a1">Task List</a><a href="{:U('Index/index')}" class="a2">+ New Task</a></div>
+  <ul>
+   <li><a href="#">Task configure</a></li>
+   <li><a href="#">Operation</a></li>
+   <li class="current"><a href="#">Execution Results</a></li>
+  </ul>
+ </div>
+
+<div id="result">
+ <ul>
+ <volist name="_tasks" id="task">
+  <li>
+   <dl>
+       <dt><label class="zoom"></label><input type="checkbox" name="tid" value="{$task['tid']}" class="checkbox" checked="checked" /><span class="span"></span>{$task['type']|ucfirst} task </dt>
+    <dd>
+    <p><label class="label">Source Probe：</label>
+    <volist name="task[src]" id="src">
+    <span class="span">{$src}</span>
+    </volist>
+    
+    </p>
+    <p><label class="label">Destination Address：</label>
+        <volist name="task['arg']['dest']" id="dest">
+        <span class="span">{$dest}</span>
+        </volist>
+    </p>
+
+    <p><label class="label">Status:</label>{$task['status']}</p>
+    <p><label class="label">Start time：</label>{$task['starttime']}</p>
+
+    <p><label class="label">End time：</label>{$task['endtime']}</p>
+    </dd>
+   </dl>
+   <div class="none">
+   <dl>
+       <dt><label class="zooms"></label>{$task['type']|ucfirst} Task</dt>
+    <dd>
+   <!-- <p><label class="label">Source Probe：</label><span class="span">10.3.17.58</span>(probe 2014-07-01 12:31:24)</p>
+    <p><label class="label">Destination Address：</label>8.8.8.8</p>
+    <p><label class="label">Average Delay：</label>192.21ms</p>
+    <p><label class="label">Loss：</label>60%</p>
+    -->
+    <if condition="$task[type] eq 'tracert'">
+    <volist name="task['report']" id="info">
+    <p><label class="label">Probe: </label>{$info['probe']}</p>
+    <p><label class="label">Destination: </label>{$info['dest']}</p>
+    <p><label class="label">TTLs:</label>
+    <volist name="info['hips']" id="hip">
+        <span class="span">{$hip}</span><br />
+    </volist>
+    </p>
+    <br/>
+    </volist>
+    <else />
+    <volist name="task['report']" id="info">
+        <foreach name="info" item="value" key="key">
+            <if condition="$key eq 'probe'">
+            <p><label class="label"><b>{$key}:</b></label>{$value}</p>
+            <else />
+            <p><label class="label">{$key}: </label>{$value}</p>
+            </if>
+        </foreach>
+        <br/>
+    </volist>
+    </if>
+    </dd>
+   </dl>
+   </div>
+  </li>
+  </volist>
+  </ul>
+ <div class="btn"><input type="button" class="btn1" value="Export PDF" onclick="exportPDFi()" /><input type="button" class="btn2" value="Share Data" onclick="shareData()" /></div>
+
+</div>
+</block>
+
+<block name="popup">
+
+<div id="fullcontent"><div class="fullcontent"></div></div>
+<div id="zoomflow">
+ <div class="inner">
+ <dl>
+    <dt><input type="checkbox" class="checkbox" checked="checked" /><span class="span"></span>Probe  1</dt>
+    <dd>
+    <p><label class="label">Source Probe：</label><span class="span">10.3.17.58</span>(probe 2014-07-01 12:31:24)</p>
+    <p><label class="label">Destination Address：</label>8.8.8.8</p>
+    <p><label class="label">Average Delay：</label>192.21ms</p>
+    <p><label class="label">Loss：</label>60%</p>
+    </dd>
+   </dl>
+ </div>
+</div>
+</block>
+<block name="script">
+<script>
+    var share_addr = "{:U('shareData')}";
+</script>
+
+<script language="javascript" type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/result.js"></script>
+</block>

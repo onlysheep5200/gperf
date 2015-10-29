@@ -1,0 +1,1 @@
+{"pid":"2095","dest":"www.google.com","result":{"last_match":"#","last_prematch":" ---\r\n5 packets transmitted, 3 packets received, 40% packet loss\r\nround-trip min\/avg\/max = 207.328\/208.847\/209.973 ms\r\n\/ ","return":{"delay":208.847,"ip":"173.194.127.146","lost":40},"error":false}}

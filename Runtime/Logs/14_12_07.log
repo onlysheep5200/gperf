@@ -1,0 +1,2091 @@
+[ 2014-12-07T00:44:37+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000649s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000776s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000400s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000370s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2014-12-07T00:44:40+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000556s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000821s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000402s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000363s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000339s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2014-12-07T00:56:27+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000821s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001054s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000388s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000357s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000357s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2014-12-07T00:57:10+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000986s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001059s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000409s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000339s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000340s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000327s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2014-12-07T01:14:36+08:00 ] 60.173.8.240 http://www.soso.com/
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000800s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001123s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000418s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000344s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000334s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000383s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000406s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2014-12-07T02:06:57+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000442s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000684s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000219s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000211s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000239s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2014-12-07T02:07:39+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000978s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001083s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000476s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000640s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000423s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000398s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000402s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2014-12-07T02:14:17+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000792s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001165s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000402s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000365s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000354s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2014-12-07T02:23:53+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.001011s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001080s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000474s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000471s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000328s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000332s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2014-12-07T02:23:53+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/cid/2.html
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.001003s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 2 ) LIMIT 1   [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000827s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001070s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000872s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'About' ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000397s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000346s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000411s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000405s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000492s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000454s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000488s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000446s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000488s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-12-07T02:32:24+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/cid/68.html
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.001146s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 68 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000750s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001056s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 68 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 68 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000796s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'Documentations' ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000435s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000319s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000377s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000331s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000349s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2014-12-07T02:55:25+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000665s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000831s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000393s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000366s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000324s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000325s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2014-12-07T02:56:04+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000840s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001084s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000353s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000360s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000322s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2014-12-07T04:02:04+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000896s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001026s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000366s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000347s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000411s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2014-12-07T04:02:42+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000939s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001198s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000409s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000368s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000368s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000393s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000390s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2014-12-07T04:53:07+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000793s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001044s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000446s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000434s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000429s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000393s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2014-12-07T04:53:41+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000800s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001032s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000368s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000326s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000302s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2014-12-07T05:52:52+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000818s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001090s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000483s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000392s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000369s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2014-12-07T05:53:02+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000452s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000711s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000159s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000211s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2014-12-07T06:30:06+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000890s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001151s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000428s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000494s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000439s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000415s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000385s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2014-12-07T06:51:39+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000842s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001167s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000451s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000391s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000303s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000377s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000382s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2014-12-07T06:51:51+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000570s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000689s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000302s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000203s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000226s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000228s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2014-12-07T06:52:40+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000499s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000611s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000315s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000205s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2014-12-07T06:53:10+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000434s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000542s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000220s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2014-12-07T07:53:39+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:1.532832s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000828s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000987s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000459s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000341s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000331s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2014-12-07T08:04:52+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/cid/40.html
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.000978s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 40 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000741s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001008s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000719s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'About' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000242s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000304s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000286s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-12-07T08:54:22+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000926s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001191s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000369s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000379s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000384s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2014-12-07T08:54:57+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000742s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001036s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000367s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000423s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000364s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000315s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000308s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2014-12-07T09:37:11+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000490s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000630s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000275s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000190s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2014-12-07T10:27:07+08:00 ] 127.0.0.1 /index.php
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000923s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001124s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000415s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000557s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000440s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000375s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000374s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2014-12-07T10:51:58+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000493s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000618s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000173s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000247s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000243s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2014-12-07T10:52:26+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000764s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000995s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2014-12-07T11:00:33+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000962s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001206s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000449s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000354s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000425s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000413s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000466s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.092511s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.092586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2014-12-07T11:00:40+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000859s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001045s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000400s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000362s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000341s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2014-12-07T11:01:31+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/hid/4/cid/45
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.000952s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 45 ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000635s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000890s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 45 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 45 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000760s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'About' ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000408s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = -1 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000375s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000382s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2014-12-07T11:55:54+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000807s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001015s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000464s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000393s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000390s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000400s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000360s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2014-12-07T11:57:58+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000603s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000633s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000343s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2014-12-07T11:59:15+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000590s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000745s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2014-12-07T12:53:55+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000777s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001043s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000344s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000388s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2014-12-07T12:55:18+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000481s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000647s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000247s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2014-12-07T12:55:56+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000826s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001103s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000452s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000471s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000359s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000423s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000370s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2014-12-07T12:56:11+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000775s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001160s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000476s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000398s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000398s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2014-12-07T13:26:44+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/hid/6/cid/53
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.000593s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 53 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000439s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000616s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000190s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000499s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'Reports' ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = -1 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000181s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2014-12-07T13:28:02+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000856s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001099s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000390s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000343s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000324s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2014-12-07T13:31:52+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/hid/6/cid/54
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.001142s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 54 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000822s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001176s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 54 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 54 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000808s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'Reports' ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = -1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000304s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000360s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000419s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000328s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2014-12-07T13:32:59+08:00 ] 127.0.0.1 /index.php
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000910s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001031s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2014-12-07T13:33:03+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/hid/6/cid/55
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.001118s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 55 ) LIMIT 1   [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000844s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001108s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000876s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'Reports' ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000459s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = -1 ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000385s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000399s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000406s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000368s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2014-12-07T13:38:14+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/hid/4/cid/40
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 40 ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000667s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001029s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000749s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'About' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000391s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000285s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000374s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2014-12-07T13:40:39+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000826s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001108s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000391s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000390s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000380s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.061510s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.061560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2014-12-07T13:40:41+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000474s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000610s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000204s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.131420s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.131469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2014-12-07T13:52:37+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000633s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000817s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000363s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000374s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2014-12-07T14:49:27+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/newsdetail/hid/8/cid/64
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.000942s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `gperf_document_article` [ RunTime:0.000764s ]
+SQL: SELECT * FROM `gperf_document_article` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000939s ]
+SQL: SELECT `name` FROM `gperf_category` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `pid` FROM `gperf_category` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `title` FROM `gperf_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000688s ]
+SQL: SELECT `id` FROM `gperf_channel` WHERE ( `title` = 'Documentations' ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000331s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT * FROM `gperf_document` WHERE ( `id` = -1 ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000419s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000396s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000403s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000315s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2014-12-07T14:56:44+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000909s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001129s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000464s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000375s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000401s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000390s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2014-12-07T14:57:25+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000425s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000565s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000221s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2014-12-07T15:03:22+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000814s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001048s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000388s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000363s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000354s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000332s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2014-12-07T15:05:42+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000855s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.001124s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000383s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000394s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2014-12-07T15:25:12+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000543s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000713s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000349s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000418s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2014-12-07T15:57:41+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `gperf_task` [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `gperf_channel` [ RunTime:0.000494s ]
+SQL: SELECT * FROM `gperf_channel` ORDER BY sort asc  [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000625s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'About' ) LIMIT 1   [ RunTime:0.000210s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 1 )  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Service' ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 41 )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Reports' ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 52 )  [ RunTime:0.000242s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'News&Events' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 57 )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Documentations' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 61 )  [ RunTime:0.000179s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `name` = 'Downloads' ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT * FROM `gperf_category` WHERE ( `pid` = 65 )  [ RunTime:0.000200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2014-12-07T15:58:02+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.081273s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.081333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2014-12-07T15:58:08+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2014-12-07T15:58:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `gperf_ucenter_member` [ RunTime:2.544459s ]
+SQL: SELECT * FROM `gperf_ucenter_member` WHERE ( `username` = 'Administrator' ) LIMIT 1   [ RunTime:2.158671s ]
+SQL: UPDATE `gperf_ucenter_member` SET `last_login_time`=1417939103,`last_login_ip`='2130706433' WHERE ( `id` = 1 ) [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `gperf_member` [ RunTime:0.000715s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`belong_to`,`score` FROM `gperf_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `gperf_action` [ RunTime:2.150834s ]
+SQL: SELECT * FROM `gperf_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:2.152460s ]
+SQL: SHOW COLUMNS FROM `gperf_action_log` [ RunTime:2.154052s ]
+SQL: INSERT INTO `gperf_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,2130706433,'member',1,1417939103,'Administrator在2014-12-07 15:58登录了后台') [ RunTime:3.631330s ]
+SQL: SELECT * FROM `gperf_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000344s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/Application/Common/Common/function.php 第 666 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /var/www/html/Application/Common/Common/function.php 第 666 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1417852703 ) LIMIT 1   [ RunTime:3.233962s ]
+SQL: SHOW COLUMNS FROM `gperf_member` [ RunTime:0.000730s ]
+SQL: UPDATE `gperf_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:1.074641s ]
+SQL: UPDATE `gperf_member` SET `login`=`login`+1,`last_login_time`=1417939103,`last_login_ip`='2130706433' WHERE ( `uid` = 1 ) [ RunTime:1.076816s ]
+
+[ 2014-12-07T15:59:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:3.209731s ]
+SQL: SELECT * FROM `gperf_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:2.133964s ]
+SQL: SELECT `id` FROM `gperf_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:0.001034s ]
+SQL: SELECT `id`,`pid`,`title` FROM `gperf_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT DISTINCT  `group` FROM `gperf_menu` WHERE ( pid = 1 )  [ RunTime:0.000267s ]
+SQL: SELECT `id`,`url` FROM `gperf_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `gperf_addons` [ RunTime:5.388980s ]
+SQL: SELECT `config` FROM `gperf_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:1.077218s ]
+SQL: SHOW COLUMNS FROM `gperf_member` [ RunTime:0.000555s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_member` LIMIT 1   [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `gperf_action_log` [ RunTime:0.000569s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_action_log` LIMIT 1   [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.000697s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_document` LIMIT 1   [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000662s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_category` LIMIT 1   [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `gperf_model` [ RunTime:2.543620s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_model` LIMIT 1   [ RunTime:0.000225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-12.241125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.150891s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.150948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:13.314673s ]
+SQL: SELECT `config` FROM `gperf_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:1.034160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-18.684213s ]
+SQL: select version() as v; [ RunTime:1.027846s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:3.389078s ]
+INFO: [ view_parse ] --END-- [ RunTime:-3.007756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-6.396664s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:6.396666s ]
+SQL: SELECT `config` FROM `gperf_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:-21.905481s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.074453s ]
+INFO: [ view_parse ] --END-- [ RunTime:-7.515461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-8.589740s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:2.193057s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:21.904464s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.074588s ]
+INFO: [ view_parse ] --END-- [ RunTime:-7.515461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-8.589866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2014-12-07T15:59:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+
+[ 2014-12-07T15:59:31+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:0.000611s ]
+SQL: SELECT * FROM `gperf_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000313s ]
+SQL: SELECT `id` FROM `gperf_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:0.000431s ]
+SQL: SELECT `id`,`pid`,`title` FROM `gperf_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT DISTINCT  `group` FROM `gperf_menu` WHERE ( pid = 1 )  [ RunTime:0.000174s ]
+SQL: SELECT `id`,`url` FROM `gperf_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `gperf_addons` [ RunTime:0.000410s ]
+SQL: SELECT `config` FROM `gperf_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `gperf_member` [ RunTime:0.000486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_member` LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `gperf_action_log` [ RunTime:0.000428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_action_log` LIMIT 1   [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `gperf_document` [ RunTime:0.000489s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_document` LIMIT 1   [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `gperf_category` [ RunTime:0.000504s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_category` LIMIT 1   [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `gperf_model` [ RunTime:0.000454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_model` LIMIT 1   [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.006737s ]
+SQL: SELECT `config` FROM `gperf_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.773538s ]
+SQL: select version() as v; [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.736571s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.764653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-2.501147s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:2.501174s ]
+SQL: SELECT `config` FROM `gperf_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-2.510776s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001312s ]
+INFO: [ view_parse ] --END-- [ RunTime:-2.501961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-2.503196s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.002030s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:2.510003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001461s ]
+INFO: [ view_parse ] --END-- [ RunTime:-2.501961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-2.503335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2014-12-07T16:00:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:0.001223s ]
+SQL: SELECT * FROM `gperf_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000612s ]
+SQL: SELECT `id` FROM `gperf_menu` WHERE ( url like '%User/index%' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:0.000959s ]
+SQL: SELECT `id`,`pid`,`title` FROM `gperf_menu` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT DISTINCT  `group` FROM `gperf_menu` WHERE ( pid = 16 )  [ RunTime:0.000484s ]
+SQL: SELECT `id`,`url` FROM `gperf_menu` WHERE ( `pid` = 16 ) AND ( `hide` = 0 )  [ RunTime:0.000403s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `gperf_menu` WHERE ( `group` = '用户管理' ) AND ( `pid` = 16 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000408s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `gperf_menu` WHERE ( `group` = '行为管理' ) AND ( `pid` = 16 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000477s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `gperf_menu` WHERE ( `group` = '' ) AND ( `pid` = 16 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `gperf_member` [ RunTime:0.000979s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_member` WHERE ( `status` >= 0 ) AND ( `nickname` LIKE '%%' ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`belong_to`,`score` FROM `gperf_member` WHERE ( `status` >= 0 ) AND ( `nickname` LIKE '%%' ) ORDER BY uid desc LIMIT 0,10   [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.550202s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.550280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2014-12-07T16:00:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/Probe/index.html
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:1.028512s ]
+SQL: SELECT * FROM `gperf_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000426s ]
+SQL: SELECT `id` FROM `gperf_menu` WHERE ( url like '%Probe/index%' ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `gperf_menu` [ RunTime:0.000582s ]
+SQL: SELECT `id`,`pid`,`title` FROM `gperf_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT DISTINCT  `group` FROM `gperf_menu` WHERE ( pid = 122 )  [ RunTime:0.000306s ]
+SQL: SELECT `id`,`url` FROM `gperf_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000209s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `gperf_menu` WHERE ( `group` = '探针管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000249s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `gperf_menu` WHERE ( `group` = '任务管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `gperf_probe` [ RunTime:0.000748s ]
+SQL: SELECT * FROM `gperf_probe` LIMIT 0,20   [ RunTime:0.001260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gperf_probe` WHERE ( status>0 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `gperf_member` [ RunTime:0.000549s ]
+SQL: SELECT * FROM `gperf_member` WHERE ( `status` >= 0 )  [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [2] inet_ntop(): Invalid in_addr value /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 139 行.
+NOTIC: [8] Undefined variable: _page /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 158 行.
+NOTIC: [8] Use of undefined constant addNewProbe - assumed 'addNewProbe' /var/www/html/Runtime/Cache/Admin/f26dda940339a0a9cac6b611ab34190f.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.196354s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.196398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+

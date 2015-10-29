@@ -1,0 +1,29 @@
+<extend name="Public/base"/>
+<block name="extend_main">
+	<div id="bannercontent">
+	 <div class="i_content">
+	 <div id="bannerlist">
+	 <div class="itemlist">
+	  <div class="item" id="overall_map"></div>
+      <div class="item"><a href="{:U('Live/Live/live')}" target="_blank"><img src="__IMG__/gperf_live.png" alt="" title="" style=" width:570px; height:300px;" /></a></div>
+	  <div class="item"><img src="__IMG__/map1.jpg" alt="" title="" style=" width:570px; height:300px;" /></div>
+	  <div class="item"><img src="__IMG__/map1.jpg" alt="" title="" style=" width:570px; height:300px;" /></div>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="bg"></div>
+	 <div id="bannertitle"><a href="#">Gperf Probes Deployment</a></div>
+	 <div id="bannermenus">
+	  <span tabindex="0"><label class="none"><a href="#">Gperf Probes Deployment</a></label></span>
+	  <span tabindex="1"><label class="none"><a href="#">GPerf Live</a></label></span>
+      <!-- <span tabindex="2"><label class="none"><a href="#">标题标题标题标题标题标题标题标题标题3</a></label></span>-->
+      <!--<span tabindex="3"><label class="none"><a href="#">标题标题标题标题标题标题标题标题标题4</a></label></span>-->
+	 </div>
+	 <div class="prev"></div>
+	 <div class="next"></div>
+	</div>
+</block>
+<block name="other_script">
+	<script src="__STATIC__/echarts/js/esl.js"></script> 
+	<script src="__JS__/index.js"></script>
+</block>

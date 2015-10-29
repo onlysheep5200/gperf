@@ -1,0 +1,75 @@
+﻿<extend name="Public/base" />
+<block name="main">
+<include file="Public/search_field" />
+<div id="sites">
+ <a href="#">Parameter</a><span>&gt;</span><a href="#">Setting</a></div>
+<div id="parameters">
+        <div class="form">
+            <ul>
+                <li class="li"><label class="label">Task Types</label>
+                <select class="select" id="service-selector"><!-- <option>Add...</option><option value="Ping">Ping</option><option value="Traceroute">Traceroute</option><option value="DNS">DNS</option> -->
+                <option>Add...</option>
+                <volist name="_types" id="vo">
+                <option value="{$vo['type']}" >{$vo['name']}</option>
+                </volist>
+            </select>
+            <div id="label-container" style="display:inline"><label class="key type" data-value="ping">{$_default}<span class="close">×</span></label></div>
+        </li>
+        <li id="probelist" style="display:none">
+            <volist name="_probes" id="vo">
+            <label><input type="checkbox" checked="checked" value="{$vo['pid']}" name="pid[]" />{$vo['name']}</label>
+            </volist>
+        </li>
+        <input type="hidden" name="token" value="{$_token}" />
+        
+        <div class="args">
+            {$_args}
+        </div>
+        <li class="btnli"><input type="button" class="submitbtn" id="submitbtn"  value="Submit" /><input type="button" class="cancelbtn" value="Cancel" /></li>
+    </ul>
+    </div>
+    
+</div>
+
+<div id="add_dest">
+ <div class="inner">
+  <div class="title"><span class="close" onclick="hideAddDialog()"></span></div>
+  <div class="body">
+   <div class="logo"></div>
+   <div class="form">
+   <ul>
+     <li><input name="new_dest" type="text" class="text" placeholder="please enter the dest you want to added" /></li>
+   
+    <li><input type="button" onclick="addDest.call(this)"  class="submitbtn" value="Add Dest" /></li>
+
+   </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</block>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var index_addr = "{:U('Index/index')}";
+    var configure_addr = "{:U('Index/configure')}";
+    var before_complete = "{:U('Index/beforeComplete')}";
+    var run_addr = "{:U('Index/run')}";
+</script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#label-container').find('label[data-value="ping"]').trigger('click');
+
+            var form = $("#ping_form");
+            var probes = $("#probelist").find('label').map(function(){
+                 return $(this).clone();   
+            });
+            probes.each(function(){
+                form.find("#probe-chooser").append($(this));
+            })
+    })
+</script>
+</body>
+</block>

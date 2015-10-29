@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<block name="head">
+<head>
+    <meta charset="utf-8" />
+    <title>GPerf-A global network performance measurement system</title>
+    <meta name="keywords" content="keyword ..." />
+    <meta name="Description" content="description ..." />
+    <!--<link href="favicon.ico" rel="shortcut icon" />-->
+
+    <link rel="shortcut icon" href="__STATIC__/favicon.ico" />
+    <link href="__CSS__/global.css" rel="stylesheet" type="text/css" />
+    <block name="style"></block>
+</head>
+</block>
+<body>
+<block name="navbar">
+    <include file="Public/header" />
+</block>
+<div id="maincontent">
+<!-- 主体部分 -->
+<block name="main">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="indexcontent">
+<form action="{:U('Index/search')}" method="post">
+<div id="search">
+ <div class="ii"><input type="text" autocomplete="off" name="search_args" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname..."  /><input type="submit" class="searchbtn" id="main_search_btn" value="" />
+ <div class="none">
+ <ul>
+ 
+ </ul> 
+ </div>
+ </div>
+ <div class="split"></div>
+ <dl>
+  <dt>Welcome to GPerf - we have 65 probes and 124 tasks running!</dt>
+  <dd>GPerf is a global network performance measurement system</dd>
+ </dl>
+</div>
+</form>
+</div>
+</block>
+</div>
+
+<!-- 页脚 -->
+<block name="footer">
+<div id="footer">
+<div class="menu"><a href="#">Academic Report</a><a href="#">GPerf News</a><a href="#">GPerf Cases</a><a href="#">GPerf Members</a></div>
+<div class="copy">Coptyright &copy; 2011-2012 Enzyme. By Empirical Themes - Remove upon purchase</div></div>
+</block>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var index_addr = "{:U(index)}";
+    var configure_addr = "{:U('configure')}";
+    var run_addr = "{:U('run')}";
+</script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+</block>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="bandwidth">
+<form id="bandwidth_form">
+<li id="probe-chooser">
+    <label class="label">Probe Source</label>
+    <!--<input type="radio" class="radio" name="srctype" value="0" /><span class="radiospan">Random</span>-->
+    &nbsp;&nbsp;&nbsp;
+	<input type="hidden" name="srctype" value="1" />
+</li>
+
+<li><label class="label">IPv4/v6</label><input type="radio" name="vtype" class="radio" value="4" /><span class="radiospan">IPv4</span><input type="radio" checked="checked" value="6" name="vtype" class="radio" /><span class="radiospan">IPv6</span></li>
+
+<li><label class="label">Protocol</label><input type="radio" name="protocol" class="radio" checked="checked" value="tcp" /><span class="radiospan">TCP</span><input type="radio" name="protocol" class="radio" value="udp" /><span class="radiospan">UDP</span></li>
+
+<li><label class="label">Target Type</label><input type="radio" name="targettype" value="server" class="radio" checked="checked" /><span class="radiospan">Probe to Server</span><input type="radio" name="targettype" value="probe" class="radio" value="probe" /><span class="radiospan">Probe to Probe</span></li>
+
+<li style="display:none"><label class="label">Target Probe</label><select name="targetprobe"></select></li>
+
+<li><label class="label">Bandwidth Alarm Threshold</label><input name="bandwidthlimit" type="text" class="text" value="1000" /><span class="span">Mbit/sec</span></li>
+
+<!--
+<li><label class="label">Execution Frequency</label><input type="radio" name="periodicity" checked="checked" value="0" class="radio" /><span class="radiospan">One-time Execution</span><input type="radio" name="periodicity" class="radio" /><span class="radiospan">Cycle Execution</span></li>
+-->
+
+</div>

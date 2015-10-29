@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+    <!-- 头 -->
+    <block name="head">
+    <head>
+        <meta charset="utf-8" />
+        <title>GPerf-A Global Performance Measurement Network
+        </title>
+        <meta name="keywords" content="keyword ..." />
+        <meta name="Description" content="description ..." />
+        <!--<link href="favicon.ico" rel="shortcut icon" />-->
+        <link href="__CSS__/global.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="__CSS__/jquery.treeview.css" />
+        <link rel="stylesheet" href="__CSS__/register.css">
+        <link rel="shortcut icon" href="__STATIC__/favicon.ico" />
+        <block name="bingmap">
+        </block>
+    </head>
+    </block>
+    <body>
+        <!-- 顶部导航栏 -->
+        <block name="navbar">
+        <div id="header">
+            <div class="inner">
+                <h1 id="logo"><a href="{:U('Index/index')}">GPerf</a></h1>
+                <div id="nav">
+                    <ul>
+                        <volist name = "channels" id = "vo">
+                        <li class="li1 "><div class="menu"><a href="#">{$vo.title}</a></div>
+                        <div class="none">
+                            <volist name = "vo['sub']" id = "vo1">
+                            <p><a href='{:U("Home/Article/newsdetail?hid=".$vo['id']."&cid=".$vo1['id'],"","")}'>{$vo1.title}</a></p>
+                            </volist>
+                        </div>
+                    </li>
+
+                    </volist>
+                </ul>
+            </div>
+            <div class="link">
+                <empty name="_uid">
+                <a href="{:U('Home/User/login')}">Sign In</a><span>|</span><a href="{:U('User/register')}">Register</a>
+                <else />
+                <a href="{:U('UserCenter/Task/index')}">User Center</a><span>|</span><a href="{:U('User/logout')}">Logout</a>
+                </empty>
+            </div>
+        </div>
+        </block>
+    </div>
+    <div id="maincontent">
+        <!-- 主体部分 -->
+        <block name="main">
+        <div class="lsplit"></div>
+        <div class="rsplit"></div>
+        <div id="indexcontent">
+            <form action="{:U('Index/search')}" method="post">
+                <div id="search">
+                    <div class="ii"><input type="text" autocomplete="off" name="search_args" class="searchtxt" placeholder="Enter country name,ASN,organization name or city."  /><input type="submit" class="searchbtn" id="main_search_btn" value="" />
+                    <div class="none">
+                        <ul>
+                          <li><b>Input examples:</b> </li>
+                          <li><b>Country:</b> <i>China</i>&nbsp;&nbsp;or&nbsp;&nbsp;<i>China;USA</i></li>
+                          <li><b>City:</b> <i>Beijing</i>&nbsp;&nbsp;or&nbsp;&nbsp;<i>Beijing;Shanghai</i></li>
+                          <li><b>ASN:</b> <i>1234</i>&nbsp;or&nbsp;&nbsp;<i>1234;5678</i></li>
+                          <li><b>Organization name:</b> <i>BUPT</i>&nbsp;&nbsp;or &nbsp;&nbsp;<i>BUPT;SJTU</i></li>
+                        <!--
+                        <div class="s"></div>
+                        <ul>
+                            <li>University of Science & Technology <b>Beijing</b><div class="key">University of Science & Technology Beijing</div></li>
+                            <li>University of Science & Technology <b>Beijing</b><div class="key">University of Science & Technology Beijing</div></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="split"></div>
+                
+
+            </div>
+        </form>
+		<block name="extend_main"></block>
+    </div>
+    </block>
+</div>
+<!-- 页脚 -->
+<block name="footer">
+<div id="footer">
+    
+    <div class="copy">Coptyright &copy; 2011-2014  </div>
+</div>
+</block>
+<!-- 弹窗 -->
+<block name="popup">
+<div id="logincontent">
+    <div class="inner">
+        <div class="title"><span class="close" onclick="hidelogin()"></span></div>
+        <div class="body">
+            <div class="logo"></div>
+            <div class="form">
+                <ul>
+                    <form action="{:U('User/login')}" method="post">
+                        <li><input required="required" name="username" type="text" class="text" placeholder="User name" /></li>
+                        <li><input type="password" name="password" required="required" class="text" placeholder="User password" /></li>
+
+                        <li><input type="submit" class="submitbtn" value="Login" /></li>
+                    </form>
+                    <li class="in"><a href="{:U('User/register')}">Sign up for new probe! </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fullcontent"><div class="fullcontent"></div></div>
+</block>
+<!-- 脚本 -->
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var index_addr = "{:U('Index/index')}";
+    var configure_addr = "{:U('Index/configure')}";
+    var before_complete = "{:U('Index/beforeComplete')}";
+    var run_addr = "{:U('Index/run')}";
+	var echart_dir  = "__STATIC__/echarts/js/";
+</script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<block name="other_script"></block>
+</body>
+</block>
+</html>

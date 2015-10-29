@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/gperf/!svn/ver/89/2/Application/Install/Data
+END
+conf.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gperf/!svn/ver/89/2/Application/Install/Data/conf.tpl
+END
+install.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gperf/!svn/ver/89/2/Application/Install/Data/install.sql
+END
+user.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gperf/!svn/ver/89/2/Application/Install/Data/user.tpl
+END

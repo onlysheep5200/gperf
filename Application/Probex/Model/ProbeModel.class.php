@@ -1,0 +1,294 @@
+<?php 
+namespace Probex\Model;
+use Think\Model;
+use Probe\PyExpect;
+class ProbeModel extends Model{
+	   public $pid;
+    public $ip;
+    public $inner_ip;
+    public $ip_v6;
+    public $port;
+    public $data;
+    public $cmds = array();
+    public $net_state;
+    private $debug = true; 
+    private $logs = array();
+    private $logfile = '/tmp/probelog';
+/**
+ * 入口
+ */
+    public function dispatch($ip, $data) 
+    {
+        $this->ip = $ip;
+        $this->data = $data;
+        $this->pid = byr_esc($data['INFO']['ProbeID']);
+        if (!$this->data['STATUS']['SSH_Status']) {
+            $this->port = null;
+        } else {
+            $ssh_cmd = $this->data['STATUS']['SSH_Status'][0]['cmd'];
+            preg_match('/(\d+):localhost/', $ssh_cmd, $match);
+            $this->port = $match[1];
+        }
+        if(empty($this->data['STATUS']['IP_Status']))
+        {
+            $this->inner_ip = NULL;
+            $this->ip_v6 = NULL;
+        }
+        else
+        {
+            $ip_status = $this->data['STATUS']['IP_Status'];
+            foreach($ip_status as $address)
+            {
+                if($address['scope'] == 'global')
+                {
+                    if($address['ver'] == 4)
+                        $this->inner_ip = $address['addr'];
+                    elseif ($address['ver']==6)
+                        $this->ip_v6 = $address['addr'];
+                }
+            }
+            $addr = explode('/',$this->inner_ip);
+            $addr = $addr[0];
+            if($this->ip == $addr)
+                $this->net_state = 'public';
+            else
+               $this->net_state = 'private'; 
+        }
+
+        $this->log('IP: '.$ip);
+        $this->log(json_encode($data));
+
+        if ($this->authenticate()) {
+            $this->main();
+        }
+        $this->flushLogs();
+        $this->flushCmds();
+    }
+    /**
+     * 查询上传的探针信息是否存在于数据库probe表中
+     */
+    private function authenticate()
+    {
+        $pid = byr_esc($this->pid);
+        // $db("SELECT * FROM prb_probe WHERE pid = '{$pid}'");
+        $probe_info = $this->where(array('pid'=>$pid))->select();
+        //$probe_info = $db();
+
+        if (is_null($probe_info)) {
+            $this->log('authentication: failed');
+            if ($this->activate()) {
+                return true;
+            }
+        } else {
+            $this->log('authentication: successful');
+            return true;
+        }
+        return false;
+    }
+    /**
+     * 若该探针不存在与probe表中，验证是否为该探针发布了配置文件
+     */
+    private function activate()
+    {
+        if ($this->port) {
+            if ($this->verifyNewProbe()) {
+                $this->log('validate new probe: successful');
+                $this->addProbe();
+                return true;
+            } else {
+                $this->log('validate new probe: failed');
+            }
+        } else {
+            $this->log('no ssh tunnel available, sending [initial ssh]');
+            $port = $this->getAvailablePort();
+            $this->sendCmd('ssh_init', array('tport' => $port));
+        }
+        return false;
+    }
+    /**
+     * 验证探针信息是否唯一存在于newprobe表中
+     */
+    private function verifyNewProbe()
+    {
+        // $db = DB::get();
+        // $db("SELECT COUNT(*) FROM prb_new_probe WHERE pid = '{$this->pid}'");
+       	$num = M('NewProbe')->where(array('pid'=>$this->pid))->count();
+        return $num == 1;
+    }
+
+    private function sendCmd($cmd, $args=null) 
+    {
+        $this->cmds[] = array(
+            'Cmd' => $cmd,
+            'Args' => $args,
+        );
+    }
+    private function addProbe()
+    {
+        // $db = DB::get();
+        // $db("SELECT `key` FROM prb_new_probe WHERE pid = '{$this->pid}'");
+        // $key = $db->ele();
+        $NewProbe = M('NewProbe');
+        $UcenterMember = M('UcenterMember');
+        $info =$NewProbe->where(array('pid'=>$this->pid))->find();
+        $key = $info['key'];
+        $date = date('Y-m-d H:i:s');
+        $data = array(
+            'pid' => $this->pid,
+            'ip' => $ip,
+            'inner_ip' => $this->inner_ip,
+            'ip_v6' => $this->ip_v6,
+            'net_state' => $this->net_state,
+            'port' => $this->port,
+            'status' => 1,
+            'running_status' => 'ok',
+            'info' => byr_esc(json_encode($this->data)),
+            'updated' => $date,
+            'position' => '',
+            'name' => $info['name'],
+            'gid' => $info['gid'],
+            'key' => $key,
+            'mid' => $info['mid'],
+            'city' => $info['city'],
+            'country' => $info['country'],
+            'as_number' =>$info['as_num'],
+            'organization' => $info['organization'],
+            'search_key' => $info['country'].','.$info['city'].','.$info['organization'],
+        );
+        if(!empty($info['name']))
+        {
+            $data['name'] = $info['name'];
+        }
+        
+        //$data['mid'] = $uid;
+        if($this->add($data))
+        {
+			$NewProbe->where(array('pid'=>$this->pid))->delete();
+            $uid = intval($data['mid']);
+            $nMember = $UcenterMember->where(array('id'=>$uid))->find();
+            $member = array('uid'=>$uid,'nickname'=>$nMember['username'],'status'=>1);
+            $Member = M('Member');
+			if($Member->where(array('uid'=>$uid))->count() != 0)
+				return true;
+            if($Member->add($member))
+            {
+                $nMember['status'] = 1;
+                $UcenterMember->save($nMember);
+            }
+            else
+            {
+                $this->log("add user error ".$Member->getlastsql());
+            }
+        	//$NewProbe->where(array('pid'=>$this->pid))->delete();
+            $this->log('probe added: '.$this->getlastsql());
+            $this->history('activate');
+        }
+    }
+
+    private function main()
+    {
+        // $db = DB::get();
+        // $db("SELECT * FROM prb_probe WHERE pid = '{$this->pid}'");
+        // $r = $db();
+        $r = $this->where(array('pid'=>$this->pid))->find();
+        $new = array();
+        if ($r['running_status'] == 'down') {
+            $this->history('up');
+        }
+        $new['pid'] = $this->pid;
+        $new['ip'] = $this->ip;
+        $new['inner_ip'] = $this->inner_ip;
+        $new['ip_v6'] = $this->ip_v6;
+        $new['net_state'] = $this->net_state;
+        $new['port'] = $this->port ? $this->port : 0;
+        $new['info'] = byr_esc(json_encode($this->data));
+        $new['updated'] = date('Y-m-d H:i:s');
+
+        if ($this->port && $this->checkSSHTunnel()) {
+            $new['status'] = 1;
+            $new['running_status'] = 'ok';
+            $new['ssh_retry_count'] = 0;
+            $this->sendCmd('ok');
+        } else {
+            $new['ssh_retry_count'] += 1;
+            $new['status'] = 0;
+            $new['running_status'] = 'ssh_down';
+            if ($new['ssh_retry_count'] > 3) {
+                $this->sendCmd('reboot');
+                $new['ssh_retry_count'] += 0;
+            } else {
+                $this->sendCmd('ssh_init', array('tport' => $this->getAvailablePort()));
+            }
+        }
+        // $db->update('prb_probe', $new, "pid = '{$this->pid}'");
+        $this->save($new);
+    }
+
+    public function getAvailablePort()
+    {
+        exec("netstat -ltn", $lines);
+        $used_ports = array();
+        foreach ($lines as $l) {
+            $parts = array_filter(explode(' ', $l), function ($e) {return $e;});
+            if (count($parts) != 4) continue;
+            $used_ports[] = (int)array_pop(explode(':', array_values($parts)[1]));
+        }
+        for ($i=4000; $i!=32767; $i++) {
+            if (!in_array($i, $used_ports)) return $i;
+        }
+    }
+
+    public function checkSSHTunnel()
+    {
+        $ex = new PyExpect('telnet', array('127.0.0.1', $this->port));
+        $ex->setTimeout(5);
+        $ex->addOperation(<<<PYTHON
+#py
+index = proc.expect(['#', pexpect.TIMEOUT, pexpect.EOF])
+proc.ret_value = (index == 0)
+PYTHON
+        , 'python');
+        $result = $ex->run();
+        return isset($result['return']) && $result['return'];
+    }
+
+    private function flushCmds()
+    {
+        if (!$this->cmds) return;
+        $encoded = json_encode($this->cmds);
+        $this->log('cmd sended: '.$encoded);
+        echo $encoded;
+        die();
+    }
+
+    private function log($msg)
+    {
+        if ($this->debug)
+        {
+            $this->logs[] = $msg;
+        }
+    }
+    private function flushLogs()
+    {
+        if ($this->debug) {
+            array_unshift($this->logs, '----'.date('Y-m-d H:i:s').'----');
+            $this->logs[] = "\n";
+            file_put_contents($this->logfile, implode("\n", $this->logs), FILE_APPEND);
+        }
+    }
+
+    private function history($action, $info=null)
+    {
+        // $data = array(
+        //     'pid' => $this->pid,
+        //     'ip' => byr_pton($this->ip),
+        //     'port' => 0,
+        //     'action' => $action,
+        //     'info' => $info === null ? null : json_encode($info),
+        //     'created' => date('Y-m-d H:i:s'),
+        // );
+        // DB::get()->insert('prb_history', $data);
+    }
+
+}
+ ?>

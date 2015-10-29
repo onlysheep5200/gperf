@@ -1,0 +1,65 @@
+<?php 	
+namespace UserCenter\Controller;
+class ProbeController extends HomeController
+{
+    private $uid;
+    public function __construct()
+    {
+        parent::__construct();
+        $this->uid = is_login();
+        $this->getCategories();
+    }
+
+	public function index()
+    {
+        $cur_page = I("page");
+        $Probe = M('Probe');
+        $sums = ceil($Probe->count()/7);
+        if(empty($cur_page))
+            $cur_page = 1;
+        elseif($cur_page <=0 || $cur_page > $sums)
+            $this->error('Illegal page num');
+        $probes = $Probe->where(array('mid'=>$this->uid))->page($cur_page,7)->select();
+        $this->assign('_probes',$probes);
+        $pages = ceil($Probe->where(array('mid'=>$this->uid))->count()/7);
+        $this->assign('_pages',$pages);
+        $this->assign('_cur_page',$cur_page);
+        $this->assign('_count',$Probe->where(array('mid'=>$this->uid))->count());
+        $user = M('Member')->where(array('uid'=>$this->uid))->find();
+        $this->assign('_user',$user);
+        $this->setBottomColumns();
+        $this->setTabsCount();
+        $this->display();
+	}
+
+
+    public function newProbe()
+    {
+
+    }
+
+    public function detail($pid)
+    {
+        $pid = intval($pid);
+        if($pid)
+        {
+            $probe = M('Probe')->where(array('pid'=>$pid))->find();
+            if($probe)
+            {
+                $this->assign('_probe',$probe);
+                $this->setBottomColumns();
+                $this->display();
+            }
+            else
+                $this->error('Illegal Probe');
+
+        }
+        else
+            $this->error('Illegal Probe');
+
+    }
+    
+
+}
+
+

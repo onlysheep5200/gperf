@@ -1,0 +1,22 @@
+        <div id="header">
+            <div class="inner">
+                <h1 id="logo"><a href="{:U('Home/Index/index')}">GPerf</a></h1>
+                <div id="nav">
+                    <ul>
+                        <volist name = "channels" id = "vo">
+                        <li class="li1 "><div class="menu"><a href="#">{$vo.title}</a></div>
+                        <div class="none">
+                            <volist name = "vo['sub']" id = "vo1">
+                            <p><a href='{:U("Home/Article/newsdetail?hid=".$vo['id']."&cid=".$vo1['id'],"","")}'>{$vo1.title}</a></p>
+                            </volist>
+                        </div>
+                    </li>
+
+                    </volist>
+                </ul>
+            </div>
+            <div class="link">
+                <a href="{:U('UserCenter/Task/index')}">{$_user['nickname']}</a><span>|</span><a href="{:U('Home/User/logout')}">Logout</a>
+            </div>
+        </div>
+        </div>

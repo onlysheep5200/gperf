@@ -1,0 +1,54 @@
+<div class="template_split"></div>
+<div class="probe_share_tg">
+ <div class="probe">
+  <div class="t"><strong>My Probe</strong></div>
+  <ul class="list">
+    <volist name="_btn_probes" id="vo">
+   <li>
+    <h4><a href="#">The probe named {$vo['name']} is {$vo['running_status']} now </a></h4>
+    <if condition="$vo['running_status'] eq 'ok'">
+    <div class="date">{$vo['updated']}</div>
+    <else />
+    <div class="date date1">{$vo['updated']}</div>
+    </if>
+   </li>
+   </volist>
+  </ul>
+ </div>
+ <div class="share">
+  <div class="t"><strong>Share</strong></div>
+  <ul class="list">
+      <volist name="_shares" id="share">
+   <li>
+   <h4><a href="#">{$share['info']}</a></h4>
+   <div class="date">{$share['time']}</div>
+   </li>
+   </volist>
+  </ul>
+ </div>
+ <div class="tg">
+  <div class="img">
+   <dl>
+    <dt>{$_score}</dt>
+    <dd>Total Points</dd>
+   </dl>
+   <div class="bg"></div>
+   <a href="#" class="more">VIEW MORE</a>
+  </div>
+  <ul>
+    <volist name="_scores" id="score">
+   <li>
+   <if condition="$score[op] eq '+'">
+   <span class="span">+{$score['score']}</span>
+    <else />
+    <span class="span span1">-{$score['score']}</span>
+    </if>
+    <h4><a href="#">{$score['info']}</a></h4>
+    <p>{$score['time']}</p>
+   </li>
+   </volist>
+  </ul>
+ </div>
+ <div class="clear"></div>
+</div>
+</div>

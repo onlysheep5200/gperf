@@ -1,0 +1,51 @@
+<extend name="Public/base" />
+
+<block name="main">
+<div id="maincontent">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="template_search">
+ <div class="key">
+ <h3>Welcome to <strong>GPerf</strong> - a unique and responsive system!</h3>
+ <p>GPerf is a unique and responsive system.</p>
+</div>
+ <div class="search"><div class="i"><input type="text" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname" /><input type="button" class="searchbtn" /></div></div>
+ <div class="split"></div>
+ </div>
+<div id="newscontent">
+ <div class="lc">
+  <dl>
+   <dt>{$channelname}</dt>
+   <dd>
+    <ul>
+      <volist name = "category_list" id = "vo2">
+     <li>&bull;&nbsp;<a href='{:U("Article/newslist?hid=".$hid."&cid=".$vo2['id'],"","")}'>{$vo2.name}</a><span></span></li>
+   </volist>
+    </ul>
+   </dd>
+  </dl>
+  <div class="search">
+   <p>The station search</p>
+   <div class="u"><input type="text" class="searchtxt" /><input type="button" class="searchbtn" value="" /></div>
+   <p>By pressing the "Search" button you explicity express your agreement with the conditions.</p>
+  </div>
+  <div class="banner"><a href="#"><img src="image/mapimg.jpg" alt="" title="" /></a></div>
+ </div>
+ <div class="rc">
+  <div id="sites"><a href="#">{$channelname}</a><span>&gt;</span><a href="#">{$category_name}</a><span>&gt;</span>{$article_title}</div>
+   <div class="newsdetail">
+   <h2 class="h2">{$article_title}</h2>
+   <div class="date">发布人：<span>administrator</span>发布时间：<span>{$document['update_time']|date="Y-m-d h:i",###}</span></div>
+   <div class="newsbody">
+   	{$document_article['content']}
+   </div>
+   <div class="prev_next">
+    <div class="prev">Previous page:<a href="#"> China hit by Microsoft cuts</a></div>
+    <div class="next">Next page:<a href="#">China hit by Microsoft cuts</a></div>
+   </div>
+  </div>
+ </div>
+ <div class="clear"></div>
+</div>
+</div>
+</block>

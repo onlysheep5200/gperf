@@ -1,0 +1,40 @@
+<extend name="Public/base_detail" />
+<block name="sites">
+	<div id="site_s">
+ <a href="#">User Center</a><span>&gt;</span><a href="#">User Management</a><span>&gt;</span>Task details</div>
+</block>
+
+<block name="main">
+<div id="taskdetail">
+ <div class="lc">
+  <dl>
+   <dt>Task info</dt>
+   <dd>
+   <ul>
+    <li><label class="label">Task Types：</label>{$_task['type']}</li>
+    <li><label class="label">Parameters：</label>
+    <foreach name="_task['arg']" item="vo" key="key">
+    <p>{$key}: {$vo}</p>
+	</foreach>
+    </li>
+    <li><label class="label">Status：</label>
+        <!-- </label><span class="state state1"></span><span class="state state2"></span><span class="state state3"></span>{$_task['status']}</li>-->
+    <if condition = "$_task['status'] eq 'done'">
+    <span class="state state2"></span>{$_task['status']}
+    <elseif condition="$task['status'] eq 'failed'"/>
+        <span class="state state3"></span>{$_task['status']}
+    <else/>
+        <span class="state state1"></span>{$_task['status']}
+    </if>
+    </li>
+    <li><label class="label">Start Time：</label>{$_task['starttime']}</li>
+    <li><label class="label">Source Probe：</label>{$_task['src']}</li>
+    <li><label class="label">Implementation Strategies：</label>Single Execution</li>
+   </ul>
+   </dd>
+  </dl>
+ </div>
+ <div class="rc"><img src="__IMG__/map1.jpg" alt="" title="" /></div>
+ <div class="clear"></div>
+</div>
+</block>

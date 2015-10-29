@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis
+END
+dir_get_infos.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/dir_get_infos.php
+END
+dir_grep.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/dir_grep.php
+END
+info.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/info.php
+END
+appinfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/appinfo.php
+END
+file_get_infos.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/file_get_infos.php
+END
+dir_tree.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/dir_tree.php
+END
+client_log.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/client_log.php
+END
+delwhitelist.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/delwhitelist.php
+END
+aewhitelist.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/aewhitelist.php
+END
+getfiles.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/getfiles.php
+END
+lshotfixs.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/lshotfixs.php
+END
+delhotfix.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/delhotfix.php
+END
+aehotfix.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/aehotfix.php
+END
+create_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/gperf/!svn/ver/89/2/Addons/Iswaf/iswaf/apis/create_config.php
+END

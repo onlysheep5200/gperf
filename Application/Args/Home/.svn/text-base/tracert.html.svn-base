@@ -1,0 +1,24 @@
+<div class="tracert">
+<form id="tracert_form">
+<li>
+
+<li id="probe-chooser">
+    <label class="label">Probe Source</label>
+    <!--<input type="radio" class="radio" name="srctype" value="0" /><span class="radiospan">Random</span>-->
+    &nbsp;&nbsp;&nbsp;
+	<input type="hidden" name="srctype" value="1" />
+</li>
+<li><label class="label">IPv4/v6</label><input type="radio" name="vtype" class="radio" value="4" checked="checked" /><span class="radiospan">IPv4</span><input type="radio" name="vtype" class="radio" value="6" /><span class="radiospan">IPv6</span></li>
+<li><label class="label">Max TTL Number</label><input name="maxttl" type="text" class="text" value="20" /></li>
+<!--
+<li><label class="label">Execution Frequency</label><input type="radio" name="periodicity" checked="checked" value="0" class="radio" /><span class="radiospan">One-time Execution</span><input type="radio" class="radio" name="periodicity"/><span class="radiospan">Cycle Execution</span></li>
+-->
+<li><input type="hidden" name="periodicity" value="0" /></li>
+<li><label class="label">Target </label><select class="select" id="target-selector"><option>www.google.com</option></select><input type="button" class="addbtn" value="" onclick="showAddDialog.call(this)"/></li>
+<li><textarea style="display:none" cols="31" rows="6"></textarea></li>
+<li id="button_line" style="display:none">&nbsp;&nbsp;&nbsp;<button type="button" id="save_text_button" onclick='onsavebtnclick.call(this)'>save</button>&nbsp;&nbsp;&nbsp;<button id="hide_text_button" type='button' onclick="oncancelbtnclick.call(this)">cancel</button></li>
+<input type="hidden" name="dest" />
+
+</form>
+<iframe width="0" height="0" id="tracert_frame" name="tracert_frame"></iframe>
+</div>

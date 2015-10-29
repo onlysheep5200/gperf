@@ -1,0 +1,1 @@
+{"pid":"2092","dest":"ipv6.tsinghua.edu.cn","result":{"last_match":"#","last_prematch":" ---\r\n5 packets transmitted, 5 packets received, 0% packet loss\r\nround-trip min\/avg\/max = 0.807\/44.124\/217.262 ms\r\n\/ ","return":{"delay":44.124,"ip":"2001:da8:1:100::80","lost":0},"error":false}}

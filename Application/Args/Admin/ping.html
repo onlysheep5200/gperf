@@ -1,0 +1,56 @@
+<div class="control-group">
+	<label  class="control-label">IPv4/v6</label>
+	<div class="controls">
+		<label class="radio inline"><input type="radio" name="vtype" checked="true" value="v4">IPV4</label>
+		<label class="radio inline"><input type="radio" name="vtype" value="v6">IPV6</label>
+	</div>
+</div>
+<div class="control-group">
+	<label  class="control-label">目标地址</label>
+	<div class="controls controls-row">
+        <select name='xxx' id="destination_selector" class="span3">
+            <option>Add New Destination...</option>
+        </select>
+        <button class="btn btn-small btn-success span1" type="button" id="adddest">add</button>
+        <button class="btn btn-small btn-danger span1" type="button" style="display:none" id="deletedest">delete</button>
+        <input type="hidden" name="dest" value=""/>
+	</div>
+</div>
+<div class="control-group">
+	<label  class="control-label">包数</label>
+	<div class="controls">
+		<input type="text" name="time" />
+	</div>
+</div>
+<div class="control-group">
+	<label  class="control-label">包大小</label>
+	<div class="controls">
+		<input type="text" name="size" />
+	</div>
+</div>
+<div class="control-group">
+	<label  class="control-label">延迟阈值</label>
+	<div class="controls">
+		<input type="text" name="delaylimit" value="1000" />
+	</div>
+</div>
+<div class="control-group">
+	<label  class="control-label">丢包阈值</label>
+	<div class="controls">
+		<input type="text" name="lostlimit" value="100" />
+	</div>
+</div>
+<div class="control-group">
+    <label>探针选择</label>
+    <div class="controls">
+        <label class="radio inline"><input class="radio" type="radio" name="srctype" value="0" checked="checked"/>随机探针</label>
+        <label class="radio inline"><input class="radio" type="radio" name="srctype" value="1">自定义探针</label>
+    </div>
+</div>
+<div class="control-group">
+	<label  class="control-label">执行周期</label>
+	<div class="controls">
+		<label class="radio inline"><input class="radio" type="radio" name="periodicity" value="0" checked="checked" />一次执行</label>
+		<label class="radio inline"><input type="radio" name="periodicity" value="0" checked="checked" />周期执行</label>
+	</div>
+</div>

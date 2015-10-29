@@ -1,0 +1,28 @@
+<extend name="Index/configure" />
+<block name="main">
+<div id="sites"><a href="#">User Center</a><span>&gt;</span><a href="#">Task List</a><span>&gt;</span>Probe Details</div>
+
+ <div class="result_tabs" id="sites">
+ <div class="link"><a href="#" class="a1">Task List</a><a href="#" class="a2">+ New Task</a></div>
+  <ul>
+   <li><a href="#">Task configure</a></li>
+   <li class="current"><a href="#">Operation</a></li>
+   <li><a href="#">Execution Results</a></li>
+  </ul>
+ </div>
+ <div id="run">
+ <div class="list" style="min-height : h-97-95">
+    <p>your task is dispatching...</p>
+ </div>
+</div>
+<div class="run_btn"><input type="button" class="cancelbtn" value="Cancel" /></div>
+</block>
+<block name="script">
+   <script src="__STATIC__/jquery-1.10.2.min.js"></script>
+   <script>
+        var result_addr = "{:U('Index/result')}";
+        var check_addr = "{:U('Index/checkTasks')}";
+   </script>
+   <script src="__JS__/run.js"></script>
+
+</block>

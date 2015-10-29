@@ -1,0 +1,60 @@
+<extend name="Public/base"/>
+<block name="main">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="template_search">
+ <div class="key">
+ <h3>Welcome to <strong>GPerf</strong> - A Gloable Performance Measurement Network!</h3>
+ <p>We have 65 probes and 78 tasks running.</p>
+</div>
+ <div class="search"><div class="i"><input type="text" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname" /><input type="button" class="searchbtn" /></div></div>
+ <div class="split"></div>
+ </div>
+<div id="parameters">
+ <div class="form">
+     <form id="register_form" action="{:U('login')}" method="post">
+  <ul>
+   <li><label class="label">User name</label><input required="required" type="text" class="text needcheck"  name="username" placeholder="Please enter your user name" /></li>
+   <li><label class="label">Password</label><input type="password" required="required" class="text needcheck" name="password" placeholder="please enter you password"/></li>
+
+   <li><label class="label">Verify Number</label><input type="text" class="text" required="required" name="verify"/></li>
+   <li><img id="verifyimg" src="{:U('User/verify')}" /></li>
+   <li class="btnli"><input type="submit" class="submitbtn" value="Login" /><input type="button" class="cancelbtn" value="Cancel" /></li>
+  </ul>
+  </form>
+ </div>
+</div>
+</block>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script src="__JS__/jquery-ui-autocomplete.js"></script>
+<script src="__JS__/jquery.select-to-autocomplete.js"></script>
+<script type="text/javascript">
+    var index_addr = "{:U('Index/index')}";
+    var configure_addr = "{:U('Index/configure')}";
+    var before_complete = "{:U('Index/beforeComplete')}";
+    var run_addr = "{:U('Index/run')}";
+    var verify_dir = "{:U('User/verify')}";
+</script>
+
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script> 
+    var imgsrc = $('#verifyimg').attr('src');
+    $("#verifyimg").click(function(){
+        if(imgsrc.indexOf('?')>0)
+        {
+            $('#verifyimg').attr('src',imgsrc+'&random='+Math.random());
+        }
+        else
+        {
+            $('#verifyimg').attr('src',imgsrc.replace(/\?.*$/,'')+'?'+Math.random());
+        }
+
+    })
+    $(document).ready(function(){
+        $('#verifyimg').trigger('click');
+    })
+</script>
+
+</block>

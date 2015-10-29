@@ -1,0 +1,61 @@
+﻿<extend name="Public/base"/>
+<block name="main">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="template_search">
+ <div class="key">
+ <h3>Welcome to <strong>GPerf</strong> - a unique and responsive system!</h3>
+ <p>GPerf is a unique and responsive system.</p>
+</div>
+ <div class="search"><div class="i"><input type="text" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname" /><input type="button" class="searchbtn" /></div></div>
+ <div class="split"></div>
+ </div>
+<div id="result">
+ <ul>
+ <volist name="_tasks" id="task">
+  <li>
+   <dl>
+       <dt><label class="zoom"></label><input type="checkbox" class="checkbox" checked="checked" /><span class="span"></span>{$task['type']|ucfirst} task </dt>
+    <dd>
+    <p><label class="label">Source Probe：</label>
+    <volist name="task[src]" id="src">
+    <span class="span">{$src}</span>
+    </volist>
+    
+    </p>
+    <p><label class="label">Destination Address：</label>
+        <volist name="task['arg']['dest']" id="dest">
+        <span class="span">{$dest}</span>
+        </volist>
+    </p>
+
+    <p><label class="label">Status:</label>{$task['status']}</p>
+    <p><label class="label">Start time：</label>{$task['starttime']}</p>
+
+    <p><label class="label">End time：</label>{$task['endtime']}</p>
+    </dd>
+   </dl>
+   <div class="none">
+   <dl>
+    <dt><label class="zooms"></label>Probe  1</dt>
+    <dd>
+    <p><label class="label">Source Probe：</label><span class="span">10.3.17.58</span>(probe 2014-07-01 12:31:24)</p>
+    <p><label class="label">Destination Address：</label>8.8.8.8</p>
+    <p><label class="label">Average Delay：</label>192.21ms</p>
+    <p><label class="label">Loss：</label>60%</p>
+    </dd>
+   </dl>
+   </div>
+  </li>
+  </volist>
+  </ul>
+  
+ <div class="btn"><input type="button" class="btn1" value="Export PDF" /><input type="button" class="btn2" value="Share Data" /></div>
+</div>
+  </block>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script language="javascript" type="text/javascript" src="__JS__/result.js"></script>
+</block>

@@ -1,0 +1,70 @@
+<extend name="Public/base"/>
+<block name="main">
+<div class="lsplit"></div>
+<div class="rsplit"></div>
+<div id="template_search">
+ <div class="key">
+ <h3>Welcome to <strong>GPerf</strong> - A Gloable Performance Measurement Network!</h3>
+ <p>We have 65 probes and 78 tasks running.</p>
+</div>
+ <div class="search"><div class="i"><input type="text" class="searchtxt" placeholder="Enter an IP address/prefix，ASN，country code or hostname" /><input type="button" class="searchbtn" /></div></div>
+ <div class="split"></div>
+ </div>
+<div id="parameters">
+ <div class="form">
+     <form action="{:U('register')}" method="post">
+  <ul>
+   <li><label class="label">User name</label><input required="required" type="text" class="text needcheck"  ajxurl="{:U('User/checkUsername')}" name="username" placeholder="Please enter your user name" /></li>
+   <li><label class="label">Password</label><input type="password" required="required" class="text needcheck" ajxurl="{:U('User/checkPassword')}" name="password" placeholder="please enter you password"/></li>
+   <li><label class="label">Comfirm Password</label><input type="password" class="text" required="required"  name="repassword" placeholder="please entr you password again"/></li>
+   <li><label class="label">Email Address</label><input type="text" class="text needcheck" ajxurl="{:U('User/checkEmail')}"  name="email" required="required" placeholder="please enter your email address" /></li>
+   <li><label class="label">Country</label><input type="text" class="text" name="country" required="required" placeholder="the country of you" /></li>
+   <li><label class="label">City</label><input type="text" class="text" name="city" required="required" placeholder="the city you live in"/></li>
+   <li><label class="label">Organization</label><input type="text" name="organization" required="required" class="text" placeholder="the organization you work for"/></li>
+   <li><label class="label">Organization Type</label><select name="orgtype">
+       <volist name="_groups" id="vo">
+            <option value="{$vo.gid}">{$vo.name}</option>
+       </volist>
+   </select></li>
+
+   <li><label class="label">AS Number</label><input type="text" name="as_num" class="text" placeholder="the as number of your organization"/></li>
+   <!-- <li><label class="label">Proeb Number</label><input type="text" class="text" name="city" placeholder="how many probe you want to contribute"/></li> -->
+   <div id="probe_names">
+       <li><label class="label">Probe Name</label><input required="required" type="text" class="text needcheck" ajxurl="{:U('User/checkProbeName')}" name="pname"/></li>
+   </div>
+   <li><label class="label">Verify Number</label><input type="text" class="text" required="required" name="verify"/></li>
+   <li><img id="verifyimg" src="{:U('User/verify')}" /></li>
+   <li class="btnli"><input type="button" class="submitbtn" value="Submit" /><input type="button" class="cancelbtn" value="Cancel" /></li>
+  </ul>
+  </form>
+ </div>
+</div>
+</block>
+
+<block name="script">
+<script language="javascript" type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var index_addr = "{:U('Index/index')}";
+    var configure_addr = "{:U('Index/configure')}";
+    var before_complete = "{:U('Index/beforeComplete')}";
+    var run_addr = "{:U('Index/run')}";
+    var verify_dir = "{:U('User/verify')}";
+</script>
+<script language="javascript" type="text/javascript" src="__JS__/global.js"></script>
+<script src="__JS__/register.js"></script>
+<script> 
+    var imgsrc = $('#verifyimg').attr('src');
+    $("#verifyimg").click(function(){
+        if(imgsrc.indexOf('?')>0)
+        {
+            $('#verifyimg').attr('src',imgsrc+'&random='+Math.random());
+        }
+        else
+        {
+            $('#verifyimg').attr('src',imgsrc.replace(/\?.*$/,'')+'?'+Math.random());
+        }
+
+    })
+</script>
+
+</block>
